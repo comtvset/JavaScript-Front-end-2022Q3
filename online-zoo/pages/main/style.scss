@@ -1,23 +1,27 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url("/online-zoo/assets/fonts/Roboto-Regular.ttf");
   font-weight: 400;
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url("/online-zoo/assets/fonts/Roboto-Medium.ttf");
   font-weight: 500;
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url("/online-zoo/assets/fonts/Roboto-Bold.ttf");
   font-weight: 700;
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url("/online-zoo/assets/fonts/Roboto-Light.ttf");
   font-weight: 300;
 }
+
 body {
   overflow: auto;
   position: relative;
@@ -35,6 +39,8 @@ body.lock {
 
 .wrapper {
   width: 1160px;
+  // margin-left: 40px;
+  // background-color: #ff0000;
   margin: auto;
 }
 
@@ -60,23 +66,48 @@ a:visited {
 }
 
 h1 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 120%;
   display: flex;
   align-items: center;
+  // letter-spacing: 0.06em; //расстояние между буквами
   color: #ffffff;
   margin-top: 3px;
   text-align: center;
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
+  color: #333B41;
+}
+
+@mixin p-size-16 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333B41;
+}
+
+@mixin p-size-24 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333B41;
+}
+
+@mixin p-size-36 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
   color: #333B41;
 }
 
@@ -95,6 +126,7 @@ h2 {
   height: 80px;
   position: relative;
   z-index: 1;
+
 }
 
 .logo {
@@ -118,19 +150,24 @@ h2 {
   margin: 16px 0px 16px 23px;
 }
 
+//   #fbmenu {
+//     position: relative;
+//   }
+
 .nav-item {
   margin-right: 58px;
 }
 
 .nav-item a {
   display: inline-block;
-  line-height: 1, 8;
+  line-height: 1,8;
   color: #ffffff;
 }
 
 .nav-item a.active:after {
   display: block;
   content: "";
+  // height: 3px; //--- линия пот тесктом УДАЛИТЬ
   width: 100%;
   background-color: #b403fa;
 }
@@ -141,7 +178,7 @@ h2 {
 }
 
 .nav-link {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -168,16 +205,18 @@ h2 {
 
 h5 {
   display: flex;
-  margin-left: 381px;
-  font-family: "Roboto";
+  margin-left: 381px; //<---- "Designed by ©"
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF;
+
 }
 
 /* ### Watch your favorite animal online ### */
+
 .image {
   margin: -80px 0px 0px 0px;
 }
@@ -199,7 +238,7 @@ h5 {
 .intr-text {
   width: 500.31px;
   height: 400px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 106.496px;
@@ -213,11 +252,7 @@ h5 {
 }
 
 .button-1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
+  @include p-size-16();
   font-weight: 500;
   line-height: 140%;
   text-align: center;
@@ -229,6 +264,7 @@ h5 {
   border-radius: 25px;
   margin: 0;
   border: 0px;
+  // margin: 60px 0px 0px 983px;
   cursor: pointer;
   text-indent: 3px;
 }
@@ -241,7 +277,9 @@ h5 {
   margin: 60px 0px 0px 983px;
 }
 
+
 /* ### The Backstage ### */
+
 .white-block {
   background: #FFFFFF;
   width: 1600px;
@@ -273,31 +311,19 @@ h5 {
 }
 
 .about-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
+  @include p-size-16();
   line-height: 130%;
   margin: 22px 0px 0px 0px;
 }
 
 .subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  color: #333B41;
+  @include p-size-24();
   line-height: 120%;
   margin: 54px 0px 0px 0px;
 }
 
 .about-subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
+  @include p-size-16();
   margin: 32px 0px 0px 0px;
   line-height: 140%;
 }
@@ -308,14 +334,33 @@ h5 {
   padding-bottom: 94px;
 }
 
+
 /* ### Pets ### */
-.left-btn {
+
+// .pets_card {
+//   box-sizing: border-box; //https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+//   border: solid #FA6F32 1px;
+//   border: solid linear-gradient(113.96deg, #FA6F32 100%, #FE9013 100%) 1px;
+//   border: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+//   border-image: linear-gradient(#f6b73c, #4d9f0c) 120;
+//   border-width: 2px;
+//   border-style: solid;
+//   border-radius: 5px;
+//   width: 366px;
+//   height: 426px;
+// }
+
+@mixin circle-btn {
   border-radius: 50%;
   width: 62px;
   height: 62px;
   border: none;
   outline: none;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.left-btn {
+  @include circle-btn();
   position: absolute;
   margin-top: 403px;
   margin-left: 138px;
@@ -324,18 +369,15 @@ h5 {
 }
 
 .right-btn {
-  border-radius: 50%;
-  width: 62px;
-  height: 62px;
-  border: none;
-  outline: none;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  @include circle-btn();
   position: absolute;
   margin-top: 403px;
   margin-left: 1398px;
   margin-bottom: 0px;
   margin-right: 0px;
 }
+
+
 
 .wrapper_pets {
   padding-bottom: 20px;
@@ -349,6 +391,9 @@ h5 {
   margin-left: -2px;
 }
 
+
+// linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+
 .btn-possition_pets {
   margin: 60px 0px 0px 651px;
   padding-bottom: 100px;
@@ -357,88 +402,85 @@ h5 {
 .pets1 {
   background: url("../../../online-zoo/assets/images/giant_pandas.jpg");
 }
-
 .pets2 {
   background: url("../../../online-zoo/assets/images/eagles.jpg");
 }
-
 .pets3 {
   background: url("../../../online-zoo/assets/images/gorillas.jpg");
 }
-
 .pets4 {
   background: url("../../../online-zoo/assets/images/two-toed_sloth.jpg");
 }
-
 .pets5 {
   background: url("../../../online-zoo/assets/images/cheetahs.jpg");
 }
-
 .pets6 {
   background: url("../../../online-zoo/assets/images/penguins.jpg");
 }
 
 .pets_card {
-  width: 366px;
-  height: 426px;
-  border: 1px solid;
-  border-radius: 5px;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  color: #FE9013;
-  margin-right: 2px;
+width: 366px;
+height: 426px;
+// background:
+//   linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+//   linear-gradient(to right, darkblue, darkorchid) border-box;
+border: 1px solid;
+border-radius: 5px;
+background-position: 50% 0;
+background-repeat: no-repeat;
+color: #FE9013;
+margin-right: 2px;
 }
 
 .kind_of {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
-  line-height: 140%;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #000000;
-  margin-top: 373px;
-  margin-left: 14px;
-  margin-bottom: 0px;
+@include p-size-16();
+line-height: 140%;
+font-weight: 600;
+text-transform: uppercase;
+color: #000000;
+margin-top: 373px;
+margin-left: 14px;
+margin-bottom: 0px;
 }
 
 .native {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #000000;
-  margin-top: -2px;
-  margin-left: 14px;
-  margin-bottom: 0px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #000000;
+margin-top: -2px;
+margin-left: 14px;
+margin-bottom: 0px;
 }
 
 .icon_choose_banana {
-  margin-top: -37px;
-  margin-left: 319px;
-  margin-bottom: 0px;
+margin-top: -37px;
+margin-left: 319px;
+margin-bottom: 0px;
 }
 
 .icon_choose_fish {
-  margin-top: -39px;
-  margin-left: 307px;
-  margin-bottom: 0px;
+margin-top: -39px;
+margin-left: 307px;
+margin-bottom: 0px;
 }
 
 .palm {
-  position: absolute;
-  margin: -460px 0px 0px 0px;
+position: absolute;
+margin: -460px 0px 0px 0px;
+// padding-bottom: 94px;
 }
 
 .strelitzia {
-  position: absolute;
-  margin: -275px 0px 0px 1232px;
+position: absolute;
+margin: -275px 0px 0px 1232px;
+// padding-bottom: 94px;
 }
 
 /* ### Pick and feed a friend ### */
+
 .gradient-block {
   width: 1600px;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -449,11 +491,13 @@ h5 {
 
 .wrap-pick {
   display: flex;
+
   background: rgba(253, 253, 255, 0.52);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   border-radius: 20px;
+
   margin-top: 0px;
+  // padding-top: 0px;
 }
 
 .wra1 {
@@ -461,61 +505,52 @@ h5 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  // margin-top: 0px;
 }
 
 .title-pick {
   color: #FE9013;
   margin: 0;
+
   margin-top: 42px;
   margin-left: 3px;
 }
 
 .info-pick {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  color: #333B41;
+  @include p-size-24();
   margin: 0;
   line-height: 120%;
+
   margin-top: 33px;
   margin-left: -120px;
 }
 
 .text-pick1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
+  @include p-size-16();
   font-weight: 500;
   margin: 0;
   line-height: 130%;
+
   margin-top: 40px;
   margin-left: 39px;
 }
 
 .text-pick2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
+  @include p-size-16();
   margin: 0;
   line-height: 130%;
+
   margin-top: 10px;
   margin-left: 99px;
   margin-right: 190px;
 }
 
 .subtitle-pick {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  color: #333B41;
+  @include p-size-36();
   line-height: 130%;
   margin: 0;
+
   margin-top: 60px;
   margin-left: -2px;
 }
@@ -524,6 +559,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  // align-items: center;
   margin-left: -131px;
 }
 
@@ -545,14 +581,19 @@ h5 {
   content: "";
   position: absolute;
   inset: 0;
+
   width: 168px;
   height: 168px;
+  // margin: 0;
+
   border-radius: 5px; /*1*/
   border: 1px solid transparent;
-  background: linear-gradient(75deg, #F9804B, #FE9013) border-box; /*3*/
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(75deg,#F9804B,#FE9013) border-box; /*3*/
+  -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; /*5'*/
-  mask-composite: exclude; /*5*/
+          mask-composite: exclude; /*5*/
 }
 
 .pic1 {
@@ -561,14 +602,12 @@ h5 {
   margin-top: 55px;
   margin-left: 31px;
 }
-
 .pic2 {
   position: relative;
   z-index: 2;
   margin-top: 39px;
   margin-left: 41px;
 }
-
 .pic3 {
   position: relative;
   z-index: 2;
@@ -577,14 +616,11 @@ h5 {
 }
 
 .choose-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333B41;
+  @include p-size-16();
   line-height: 140%;
   width: 168px;
   height: 46px;
+
   margin-top: 30px;
 }
 
@@ -599,7 +635,6 @@ h5 {
   margin-top: -199px;
   margin-left: -299px;
 }
-
 .arrow2 {
   position: relative;
   margin-top: -46px;
@@ -607,11 +642,8 @@ h5 {
 }
 
 /* ### Testimonials ### */
+
 .title-test {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  color: #333B41;
+  @include p-size-36();
   margin: 0;
-}/*# sourceMappingURL=style.css.map */
+}
