@@ -1025,6 +1025,7 @@ h5 {
   color: #333B41;
   color: #ffffff;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 .button-2 {
@@ -1048,10 +1049,12 @@ h5 {
   transition: all 0.3s ease;
 }
 
-.button-2:hover {
-  color: #F9804B;
-  border: 1px solid #F9804B;
-  transition: all 0.3s ease;
+.contact_info:focus:invalid:required {
+  border: 1px solid #D31414;
+}
+
+.contact_info:focus:valid {
+  border: 1px solid #4B9200;
 }
 
 .button-2:active {
