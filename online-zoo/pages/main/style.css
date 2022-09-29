@@ -205,6 +205,10 @@ h5 {
   color: #FFFFFF;
 }
 
+.active:hover {
+  color: #ffffff;
+}
+
 /* ### Watch your favorite animal online ### */
 .image {
   margin: -80px 0px 0px 0px;
@@ -903,12 +907,14 @@ h5 {
   border-radius: 5px;
   margin-top: 69px;
   margin-left: 0px;
+  margin-bottom: 16px;
 }
 
 .social_block {
   display: flex;
   flex-direction: column;
-  margin: 37px 0px 0px 0px;
+  margin: 46px 0px 0px 0px;
+  width: 110px;
 }
 
 .font-soc {
@@ -920,11 +926,6 @@ h5 {
   line-height: 140%;
   color: #FFFFFF;
   margin: 5px 0px 0px 12px;
-  transition: all 0.3s ease;
-}
-
-.font-soc:hover {
-  color: #4B9200;
   transition: all 0.3s ease;
 }
 
@@ -958,7 +959,23 @@ h5 {
 .ico-wrap {
   display: flex;
   flex-direction: row;
-  margin: 8px 0px 0px 0px;
+  margin: -18px 0px 0px 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333B41;
+  line-height: 140%;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.ico-wrap:hover {
+  color: #4B9200;
+}
+
+.font-pasition {
+  margin: 3px 0px 29px 12px;
 }
 
 .ico_f {
@@ -1009,6 +1026,26 @@ h5 {
   transition: all 0.3s ease;
 }
 
+.ico-wrap:hover {
+  color: #4B9200;
+}
+
+.ico-wrap:hover > .ico_f {
+  background-color: #84ff00;
+}
+
+.ico-wrap:hover > .ico_t {
+  background-color: #84ff00;
+}
+
+.ico-wrap:hover > .ico_i {
+  background-color: #84ff00;
+}
+
+.ico-wrap:hover > .ico_y {
+  background-color: #84ff00;
+}
+
 .mail-box {
   display: flex;
   flex-direction: row;
@@ -1041,17 +1078,33 @@ h5 {
   color: #333B41;
   line-height: 140%;
   text-align: center;
-  color: #000000;
+  color: #D31414;
   width: 129px;
   height: 42px;
   background: #F1F3F2;
-  border: 1px solid #000000;
+  border: 1px solid #D31414;
   border-radius: 5px;
   margin-left: 10px;
-  border: 0px;
   cursor: pointer;
   text-indent: 3px;
   transition: all 0.3s ease;
+}
+
+.button-2:focus:valid {
+  border: 1px solid #4B9200;
+  color: #4B9200;
+}
+
+.contact_info::-moz-placeholder {
+  color: #e2dcdc;
+}
+
+.contact_info:-ms-input-placeholder {
+  color: #e2dcdc;
+}
+
+.contact_info::placeholder {
+  color: #e2dcdc;
 }
 
 .contact_info:focus:invalid:required {
@@ -1062,10 +1115,9 @@ h5 {
   border: 1px solid #4B9200;
 }
 
-.button-2:active {
+.contact_info:valid + a > .button-2 {
+  border: 2px solid #4B9200;
   color: #4B9200;
-  border: 1px solid #4B9200;
-  transition: all 0.3s ease;
 }
 
 .btn-possition_intro {

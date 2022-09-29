@@ -259,6 +259,11 @@ h5 {
   color: #FFFFFF;
 }
 
+.active:hover {
+  color: #ffffff;
+}
+
+
 /* ### Watch your favorite animal online ### */
 
 .image {
@@ -923,12 +928,14 @@ margin: -275px 0px 0px 1232px;
   border-radius: 5px;
   margin-top: 69px;
   margin-left: 0px;
+  margin-bottom: 16px;
 }
 
 .social_block {
   display: flex;
   flex-direction: column;
-  margin: 37px 0px 0px 0px;
+  margin: 46px 0px 0px 0px;
+  width: 110px;
 }
 .font-soc {
   @include p-size-16();
@@ -938,14 +945,10 @@ margin: -275px 0px 0px 1232px;
   transition: all 0.3s ease;
 }
 
-// .ico_f:hover,
-// .ico_t:hover,
-// .ico_i:hover,
-// .ico_y:hover,
-.font-soc:hover {
-  color: #4B9200;
-  transition: all 0.3s ease;
-}
+// .font-soc:hover {
+//   color: #4B9200;
+//   transition: all 0.3s ease;
+// }
 
 .sub-footer {
   @include p-size-24();
@@ -964,12 +967,24 @@ margin: -275px 0px 0px 1232px;
   margin: 216px 0px 0px 137px;
 }
 
-
-
 .ico-wrap {
   display: flex;
   flex-direction: row;
-  margin: 8px 0px 0px 0px;
+  margin: -18px 0px 0px 0px;
+
+  @include p-size-16();
+  line-height: 140%;
+  color: #FFFFFF;
+  // padding: 5px 0px 0px 12px;
+  transition: all 0.3s ease;
+}
+
+.ico-wrap:hover {
+  color: #4B9200;
+}
+
+.font-pasition {
+  margin: 3px 0px 29px 12px;
 }
 
 @mixin ico {
@@ -1008,6 +1023,23 @@ margin: -275px 0px 0px 1232px;
   transition: all 0.3s ease;
 }
 
+.ico-wrap:hover {
+  color: #4B9200;
+}
+
+.ico-wrap:hover > .ico_f {
+  background-color: #84ff00;
+}
+.ico-wrap:hover > .ico_t {
+  background-color: #84ff00;
+}
+.ico-wrap:hover > .ico_i {
+  background-color: #84ff00;
+}
+.ico-wrap:hover > .ico_y {
+  background-color: #84ff00;
+}
+
 .mail-box {
   display: flex;
   flex-direction: row;
@@ -1034,25 +1066,27 @@ margin: -275px 0px 0px 1232px;
   line-height: 140%;
   text-align: center;
 
-  color: #000000;
+  color: #D31414;
   width: 129px;
   height: 42px;
   background: #F1F3F2;
-  border: 1px solid #000000;
+  border: 1px solid #D31414;
   border-radius: 5px;
   margin-left: 10px;
-  border: 0px;
+  // border: 0px;
   // margin: 60px 0px 0px 983px;
   cursor: pointer;
   text-indent: 3px;
   transition: all 0.3s ease;
 }
+.button-2:focus:valid {
+  border: 1px solid #4B9200;
+  color: #4B9200;
+}
 
-// .button-2:hover {
-//   color: #F9804B;
-//   border: 1px solid #F9804B;
-//   transition: all 0.3s ease;
-// }
+.contact_info::placeholder {
+  color: #e2dcdc;
+}
 
 .contact_info:focus:invalid:required {
   border: 1px solid #D31414;
@@ -1062,10 +1096,9 @@ margin: -275px 0px 0px 1232px;
   border: 1px solid #4B9200;
 }
 
-.button-2:active {
+.contact_info:valid + a > .button-2 {
+  border: 2px solid #4B9200;
   color: #4B9200;
-  border: 1px solid #4B9200;
-  transition: all 0.3s ease;
 }
 
 .btn-possition_intro {
