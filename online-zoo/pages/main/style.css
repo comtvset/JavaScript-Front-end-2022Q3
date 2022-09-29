@@ -106,6 +106,20 @@ h2 {
   color: #333B41;
 }
 
+h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 3px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
 /* ### HEADER ### */
 .black-block {
   background-color: #000000;
@@ -148,6 +162,11 @@ h2 {
 .img_bamboo {
   position: relative;
   margin: -39px 0px 0px 9px;
+}
+
+.img_bamboo_down {
+  position: relative;
+  margin: -53px 0px 0px 9px;
 }
 
 .nav {
