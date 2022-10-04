@@ -53,7 +53,7 @@ body.lock {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 a {
@@ -1180,6 +1180,12 @@ margin: -275px 0px 0px 1232px;
     margin: -80px 0px -53px 0px;
   }
 
+  .img_bamboo_normal {
+    background: url(../../assets/styles/bamboo.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px -4px;
+  }
 
   .circle {
     margin: -515px 0px 0px 456px;
@@ -1429,6 +1435,12 @@ margin: -275px 0px 0px 1232px;
 
 @media (max-width: 1599px) and (max-width: 999px) {
 
+  .stick {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 6;
+  }
   .container {
     width: 640px;
   }
