@@ -17,14 +17,15 @@
                     <a class="logo" href="../../../online-zoo/pages/main/index.html">
                         <h1>PetStory online</h1>
                         <div class="img_bamboo">
-                            <img src="../../../online-zoo/assets/styles/bamboo.svg" alt="bamboo">
+                            <div class="img_bamboo_small"></div>
+                            <img class="display_none" src="../../../online-zoo/assets/styles/bamboo.svg" alt="bamboo">
                         </div>
                     </a>
                     <nav>
-                        <!-- <div class="fbmenu">
+                        <div class="fbmenu">
                             <span></span>
-                        </div> -->
-                        <ul class="nav" id="menu">
+                        </div>
+                        <ul class="nav nav_header" id="menu">
                             <li class="nav-item"><a href="../../../online-zoo/pages/main/index.html" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="https://goo.gl/maps/Evaguc88cERtE2WY7" class="nav-link">Map</a></li>
                             <li class="nav-item"><a href="#help" class="nav-link">Zoos</a></li>
@@ -33,7 +34,7 @@
                         </ul>
                     </nav>
                     <a class="copyright" href="#">
-                        <h5><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></h5>
+                        <h5 class="copyright_none"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></h5>
                     </a>
                 </div>
             </div>
@@ -42,9 +43,10 @@
 
     <main>
         <section class="container img_backround">
-            <img src="../../../online-zoo/assets/images/panda_bg.jpg" alt="panda">
+            <div class="panda_adaptive"></div>
+            <img class="display_none" src="../../../online-zoo/assets/images/panda_bg.jpg" alt="panda">
             <div class="gradient-block">
-                <div class="wrapper">
+                <div class="wrapper pick_container">
                     <p class="titel">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</p>
                     <p class="subtitel">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
                     <p class="donat-info">Donation Information</p>
@@ -57,8 +59,10 @@
                                 <p class="pick_numb">4</p>
                                 <p class="pick_num_info">Panda diet for the day.</p>
                             </div>
-                            <img src="../../../online-zoo/assets/icons/x_icon.svg" class="x" alt="x">
-                            <img src="../../../online-zoo/assets/images/animals-panda.png" class="img_animal" alt="animal">
+                            <div class="x_adaptive"></div>
+                            <div class="panda_adaptive_donate"></div>
+                            <img src="../../../online-zoo/assets/icons/x_icon.svg" class="x elem_none" alt="x">
+                            <img src="../../../online-zoo/assets/images/animals-panda.png" class="img_animal elem_none" alt="animal">
                         </div>
 
                         <div class="donate-menu">
@@ -70,7 +74,7 @@
                                 </div>
 
                                 <div class="donate-menu-container">
-                                <div class="donate-menu-container-radio">
+                                <div class="donate-menu-container-radio radio-container-5000">
                                     <input class="custom-radio" type="radio" id="dollar-1" name="dollar" value="5000">
                                     <label class="label-radio" for="dollar-1"></label>
                                     <label class="dollar-label" for="dollar-1">
@@ -78,7 +82,7 @@
                                         <div class="dollar-count">5000</div>
                                     </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
+                                <div class="donate-menu-container-radio radio-container-2000">
                                     <input class="custom-radio" type="radio" id="dollar-2" name="dollar" value="2000">
                                     <label class="label-radio" for="dollar-2"></label>
                                     <label class="dollar-label" for="dollar-2">
@@ -86,15 +90,15 @@
                                         <div class="dollar-count">2000</div>
                                         </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
-                                    <input class="custom-radio" type="radio" id="dollar-3" name="dollar" value="1000" checked="checked">
+                                <div class="donate-menu-container-radio radio-container-1000">
+                                    <input class="custom-radio" type="radio" id="dollar-3" name="dollar" value="1000">
                                     <label class="label-radio" for="dollar-3"></label>
                                     <label class="dollar-label" for="dollar-3">
                                         <div class="dollar-radio"></div>
                                         <div class="dollar-count">1000</div>
                                     </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
+                                <div class="donate-menu-container-radio radio-container-500">
                                     <input class="custom-radio" type="radio" id="dollar-4" name="dollar" value="500">
                                     <label class="label-radio" for="dollar-4"></label>
                                     <label class="dollar-label" for="dollar-4">
@@ -102,7 +106,7 @@
                                         <div class="dollar-count">500</div>
                                     </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
+                                <div class="donate-menu-container-radio radio-container-250">
                                     <input class="custom-radio" type="radio" id="dollar-5" name="dollar" value="250">
                                     <label class="label-radio" for="dollar-5"></label>
                                     <label class="dollar-label" for="dollar-5">
@@ -110,15 +114,15 @@
                                         <div class="dollar-count">250</div>
                                     </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
-                                    <input class="custom-radio" type="radio" id="dollar-6" name="dollar" value="100">
+                                <div class="donate-menu-container-radio radio-container-100">
+                                    <input class="custom-radio" type="radio" id="dollar-6" name="dollar" value="100" checked="checked">
                                     <label class="label-radio" for="dollar-6"></label>
                                     <label class="dollar-label" for="dollar-6">
                                         <div class="dollar-radio"></div>
                                         <div class="dollar-count">100</div>
                                     </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
+                                <div class="donate-menu-container-radio radio-container-50">
                                     <input class="custom-radio" type="radio" id="dollar-7" name="dollar" value="50">
                                     <label class="label-radio" for="dollar-7"></label>
                                     <label class="dollar-label" for="dollar-7">
@@ -126,7 +130,7 @@
                                         <div class="dollar-count">50</div>
                                     </label>
                                 </div>
-                                <div class="donate-menu-container-radio">
+                                <div class="donate-menu-container-radio radio-container-25">
                                     <input class="custom-radio" type="radio" id="dollar-8" name="dollar" value="25">
                                     <label class="label-radio" for="dollar-8"></label>
                                     <label class="dollar-label" for="dollar-8">
@@ -164,32 +168,32 @@
     </main>
 
     <footer class="container black-block position_footer">
-        <div class="wrapper">
+        <div class="wrapper size_box_footer">
             <div class="footer-horizont">
                 <div class="footer-vertical-1">
-                    <a class="logo position_footer_logo" href="../../../online-zoo/pages/main/index.html">
+                    <a class="logo position_footer_logo logo_footer_border_adaptive" href="../../../online-zoo/pages/main/index.html">
                         <h4>PetStory online</h4>
                         <div class="img_bamboo_down">
                             <img src="../../../online-zoo/assets/styles/bamboo.svg" alt="bamboo">
                         </div>
                     </a>
-                    <button class="button-1 btn-position_footer"><a href="../../../online-zoo/pages/donate/index.html">donate for volunteers</a></button>
+                    <button class="button-1 btn-possition_footer"><a href="../../../online-zoo/pages/donate/index.html">donate for volunteers</a></button>
                     <div class="social_block">
                         <div class="ico-wrap">
                             <img class="ico_f" src="../../../online-zoo/assets/icons/facebook_26x26.svg">
-                            <a href="https://facebook.com/"><p class="font-pasition">Facebook</p></a>
+                            <a href="https://facebook.com/"><p class="font-pasition footer_element_none">Facebook</p></a>
                         </div>
                         <div class="ico-wrap">
                             <img class="ico_t" src="../../../online-zoo/assets/icons/twitter_26x26.svg">
-                            <a href="https://twitter.com/"><p class="font-pasition">Twitter</p></a>
+                            <a href="https://twitter.com/"><p class="font-pasition footer_element_none">Twitter</p></a>
                         </div>
                         <div class="ico-wrap">
                             <img class="ico_i" src="../../../online-zoo/assets/icons/instagram_26x26.svg">
-                            <a href="https://instagram.com/"><p class="font-pasition">Instagram</p></a>
+                            <a href="https://instagram.com/"><p class="font-pasition footer_element_none">Instagram</p></a>
                         </div>
                         <div class="ico-wrap">
                             <img class="ico_y" src="../../../online-zoo/assets/icons/youtube_26x26.svg">
-                            <a href="https://youtube.com/"><p class="font-pasition">YouTube</p></a>
+                            <a href="https://youtube.com/"><p class="font-pasition footer_element_none">YouTube</p></a>
                         </div>
                     </div>
                 </div>
@@ -204,10 +208,10 @@
                     </nav>
                 </div>
                 <div class="footer-vertical-3">
-                    <div><p class="sub-footer">Subscribe to our news</p></div>
+                    <div><p class="sub-footer footer_element_none">Subscribe to our news</p></div>
                     <form class="mail-box">
-                        <input type="email" name="email" id="email" required="required" class="contact_info" placeholder="Enter your email">
-                        <button class="button-2">Submit</button>
+                        <input type="email" name="email" id="email" required="required" class="contact_info footer_element_none" placeholder="Enter your email">
+                        <button class="button-2 footer_element_none">Submit</button>
                     </form>
 
 
