@@ -53,6 +53,7 @@ body.lock {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -214,6 +215,9 @@ h4 {
   position: relative;
   margin: -39px 0px 0px 9px;
 }
+
+
+
 .img_bamboo_down {
   position: relative;
   margin: -53px 0px 0px 9px;
@@ -748,8 +752,9 @@ margin: -275px 0px 0px 1232px;
 }
 .arrow2 {
   position: relative;
-  margin-top: -46px;
+  margin-top: -43px;
   margin-left: 296px;
+  margin-bottom: -3px;
 }
 
 .link-style {
@@ -1130,4 +1135,1157 @@ margin: -275px 0px 0px 1232px;
 .menu_footer {
   margin: 26px 0px 16px 23px;
   padding-left: 0px;
+}
+
+
+
+@media (max-width: 1599px) {
+  .container {
+    width: 1000px;
+  }
+
+  .wrapper {
+    width: 940px;
+    // margin-left: 40px;
+    // background-color: #ff0000;
+  }
+
+  .black-block {
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+  }
+
+  .nav-item {
+    margin-right: 48px;
+  }
+
+  h5 {
+    margin-left: 252px; //<---- "Designed by ©"
+  }
+
+  /* ### Watch your favorite animal online ### */
+
+  .display_none {
+    display: none;
+  }
+
+  .panda_adaptive {
+    background: url(../../assets/images/panda_1000.jpg) no-repeat center;
+    height: 584px;
+  }
+
+  .image {
+    margin: -80px 0px -53px 0px;
+  }
+
+
+  .circle {
+    margin: -515px 0px 0px 456px;
+    width: 367px;
+    height: 367px;
+    z-index: 0;
+  }
+
+  .intr-text {
+    width: 400.25px;
+    height: 320px;
+    font-size: 85px;
+    line-height: 75%;
+    margin: -313px 0px 0px 514px;
+  }
+
+  .btn-possition_intro {
+    margin: 40px 0px 0px 565px;
+  }
+
+  /* ### The Backstage ### */
+
+  .wrap-backstage {
+    margin-top: 100px;
+    margin-bottom: 711px;
+    margin-left: -15px;
+    margin-right: 0px;
+  }
+
+  .image-backstage {
+    margin: 109px 0px 72px 15px;
+  }
+
+  .bamboo_adaptive {
+    background: url(../../assets/images/bamboo-cap_1000.jpg) no-repeat center;
+    width: 455px;
+    height: 408px;
+  }
+
+  .info-backstage {
+    margin: 100px 0px 0px 31px;
+  }
+
+  .about-subtitle {
+    margin: 32px 0px 0px 0px;
+  }
+
+  /* ### Pets ### */
+
+  .wrapper_pets {
+    padding-bottom: 92px;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+  }
+
+  .pets_card {
+    width: 294px;
+    height: 354px;
+  }
+  .pets1,
+  .pets2,
+  .pets3,
+  .pets4,
+  .pets5,
+  .pets6 {
+    background-size: 100% 83%;
+  }
+
+  .kind_of {
+    margin-top: 303px;
+    margin-left: 14px;
+    padding-top: 0px;
+    }
+
+  .native {
+    margin-top: -2px;
+    margin-left: 14px;
+  }
+
+  .icon_choose_banana {
+    margin-top: -41px;
+    margin-left: 246px;
+  }
+
+  .icon_choose_fish {
+    margin-top: -39px;
+    margin-left: 236px;
+  }
+
+  .left-btn {
+    margin-top: 369px;
+    margin-left: 353px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+
+  .right-btn {
+    margin-top: 369px;
+    margin-left: 586px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+
+  .palm {
+    margin: -202px 0px 0px 0px;
+  }
+
+  .palm_adaptive {
+    background: url(../../assets/styles/palm_foto_1000.png);
+    width: 193px;
+    height: 202px;
+  }
+
+  .strelitzia {
+    margin: -180px 0px 0px 759px;
+  }
+
+  .strelitzia_adaptive {
+    background: url(../../assets/styles/strelitzia_1000.png) no-repeat center;
+    width: 241px;
+    height: 180px;
+  }
+
+  .btn-possition_pets {
+    margin: -11px 0px 0px 351px;
+    padding-bottom: 140px;
+  }
+
+    /* ### Pick and feed a friend ### */
+
+  .gradient-block {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .title-pick {
+    margin-top: 31px;
+    margin-left: 1px;
+  }
+
+  .info-pick {
+    margin-top: 22px;
+    margin-left: 0px;
+  }
+
+  .text-pick1 {
+    margin-top: 22px;
+    margin-left: 49px;
+    padding-right: 76px;
+  }
+
+  .text-pick2 {
+    margin-top: 10px;
+    margin-left: 49px;
+    margin-right: 71px;
+  }
+
+  .subtitle-pick {
+    margin-top: 39px;
+  }
+
+  .btn-possition_pick {
+    margin-top: 216px;
+    margin-bottom: 50px;
+  }
+
+  /* ### Testimonials ### */
+
+  .title-test {
+    margin-top: -40px;
+  }
+
+  .gradient-block-test {
+    width: 293px;
+    height: 391px;
+    // margin-left: 10px;
+    // margin-right: 17px;
+  }
+
+  .gradient-block-test::before {
+    width: 292px;
+    height: 390px;
+  }
+
+  .blocks_comment {
+    margin-top: 31px;
+  }
+
+  .user_comment {
+    width: 258px;
+  }
+
+  .slidecontainer {
+    width: 390px;
+    margin-top: 15px;
+    margin-left: -13px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    width: 75px;
+  }
+  .slider::-moz-range-thumb {
+    width: 75px;
+  }
+
+  .btn-possition_test {
+    margin-top: 58px;
+    margin-left: -643px;
+  }
+
+  .leav {
+    margin-top: -80px;
+    margin-left: 805px;
+
+  }
+
+  .leav_adaptive {
+    background: url(../../assets/styles/leav_foto_1000.png) no-repeat center;
+    width: 196px;
+    height: 325px;
+    margin-top: -18px;
+    margin-bottom: -13px;
+  }
+
+  /* ### Footer ### */
+
+  .position_footer {
+    margin-top: -73px;
+  }
+
+  .footer-vertical-2 {
+    margin: 345px 0px 24px -31px;
+  }
+
+  .footer-vertical-3 {
+    margin-left: -88px;
+    margin-top: 41px;
+  }
+
+  .design_position {
+    margin: 216px 0px 0px 169px;
+  }
+
+}
+
+@media (max-width: 1599px) and (max-width: 999px) {
+
+  .container {
+    width: 640px;
+  }
+  .wrapper {
+    width: 640px;
+  }
+
+  /* ### HEADER ### */
+
+  .nav_header {
+    display: none;
+  }
+
+  .wrapper_header {
+    height: 34px;
+  }
+
+ //##########LOGO############//
+
+  h1 {
+    font-size: 12.2899px;
+    margin-top: 1px;
+  }
+
+  .logo {
+    width: 46.93px;
+    height: 29.03px;
+    margin: 0px 0px 0px 20px;
+    border: none;
+  }
+
+  .logo:hover {
+    border: none;
+  }
+
+  .img_bamboo {
+    position: relative;
+    margin: -39px 0px 0px 9px;
+  }
+  // .img_bamboo_down {
+  //   position: relative;
+  //   margin: -53px 0px 0px 9px;
+  // }
+
+  .img_bamboo_small {
+    background: url(../../assets/styles/bamboo_small.svg) no-repeat center;
+    width: 4.54px;
+    height: 13.56px;
+    margin: 15px 0px 0px -3px;
+  }
+
+ //##########BURGER############//
+
+  .fbmenu {
+    z-index: 4;
+    position: relative;
+    height: 10px;
+    width: 18px;
+    cursor: pointer;
+    margin-left: 535px;
+    margin-top: -2px;
+  }
+  .fbmenu span,
+  .fbmenu::before,
+  .fbmenu::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+  }
+  .fbmenu::before,
+  .fbmenu::after {
+    content: "";
+  }
+  .fbmenu::before {
+    top: 0;
+  }
+  .fbmenu::after {
+    bottom: 0;
+  }
+  .fbmenu span {
+    top: 50%;
+    -webkit-transform: scale(1) translate(0px, -50%);
+            transform: scale(1) translate(0px, -50%);
+  }
+  .fbmenu._active span {
+    top: 50%;
+    left: -10px;
+    -webkit-transform: rotate(90deg) translate(0px, 50%);
+            transform: rotate(90deg) translate(0px, 50%);
+  }
+  .fbmenu._active::before {
+    top: 50%;
+    left: 10px;
+    -webkit-transform: rotate(90deg) translate(0px, 50%);
+            transform: rotate(90deg) translate(0px, 50%);
+  }
+  .fbmenu._active::after {
+    top: 50%;
+    -webkit-transform: rotate(90deg) translate(0px, 50%);
+            transform: rotate(90deg) translate(0px, 50%);
+  }
+
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background-color: #292929;
+    padding-top: 237px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    margin: 0;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    z-index: 3;
+    overflow-y: scroll;
+    text-align: center;
+  }
+  .menu__box._active {
+    -webkit-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+  }
+  .logo._active {
+    z-index: 10;
+  }
+
+  .copyright_none {
+    display: none;
+  }
+
+  /* ### Watch your favorite animal online ### */
+
+  .display_none {
+    display: none;
+  }
+
+  .panda_adaptive {
+    height: 463px;
+    background-size: 100%;
+  }
+
+  .image {
+    margin: -80px 0px -53px 0px;
+  }
+
+
+  .circle {
+    margin: -373px 0px 0px 331px;
+    width: 237.6px;
+    height: 237.6px;
+    z-index: 0;
+  }
+
+  .intr-text {
+    width: 255.64px;
+    height: 204.38px;
+    font-size: 54.2894px;
+    line-height: 75%;
+    margin: -199px 0px 0px 368px;
+  }
+
+  .btn-possition_intro {
+    margin: -8px 0px -8px 20px;
+  }
+
+  /* ### The Backstage ### */
+
+  .wrap-backstage {
+    margin-top: 100px;
+    margin-bottom: 94px;
+    // margin-left: -15px;
+    margin-left: 0px;
+    margin-right: 137px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .bamboo_adaptive {
+    display: none;
+  }
+
+  .info-backstage {
+    margin: 61px 0px 0px 35px;
+    width: 495px;
+  }
+
+  .title {
+    margin: 0px 0px 0px -26px;
+  }
+
+  .about-title {
+    margin: 22px 0px 0px -30px;
+  }
+
+  .subtitle {
+    margin: 30px 0px 0px -26px;
+  }
+
+  .about-subtitle {
+    margin: 19px 0px 0px -30px;
+  }
+
+  .flower {
+    margin: -524px 0px 0px 458px;
+    padding-bottom: 32px;
+  }
+
+  .flower_adaptive {
+    background: url(../../assets/styles/flower_foto_640.png) no-repeat center;
+    // width: 231px;
+    height: 476px;
+    margin-left: 49px;
+  }
+
+  /* ### Pets ### */
+
+  .wrapper_pets {
+    padding-bottom: 92px;
+    justify-content: space-around;
+    padding-left: 6px;
+    padding-right: 4px;
+  }
+
+  .two_cards {
+    display: none;
+  }
+
+  .pets_card {
+    width: 285px;
+    height: 332px;
+  }
+  .pets1,
+  .pets2,
+  .pets3,
+  .pets4,
+  .pets5,
+  .pets6 {
+    background-size: 100% 86%;
+  }
+
+  .kind_of {
+    margin-top: 291px;
+    margin-left: 11px;
+    padding-top: 0px;
+    font-size: 12.4695px;
+    }
+
+  .native {
+    margin-top: -2px;
+    margin-left: 11px;
+    font-size: 11.6901px;
+  }
+
+  .icon_choose_banana {
+    margin-top: -28px;
+    margin-left: 249px;
+  }
+
+  .icon_choose_banana_size {
+    width: 25.72px;
+    height: 28.84px;
+  }
+
+  .icon_choose_fish {
+    margin-top: -30px;
+    margin-left: 241px;
+  }
+
+  .icon_choose_fish_size {
+    width: 37.41px;
+    height: 29.62px;
+  }
+
+  .left-btn {
+    margin-top: 343px;
+    margin-left: 243px;
+  }
+
+  .right-btn {
+    margin-top: 343px;
+    margin-left: 335px;
+  }
+
+  .palm {
+    margin: -202px 0px 0px 0px;
+  }
+
+  .palm_adaptive {
+    background: url(../../assets/styles/palm_foto_640.png) no-repeat center;
+    width: 134px;
+    height: 202px;
+  }
+
+  .strelitzia {
+    margin: -131px 0px 0px 437px;
+  }
+
+  .strelitzia_adaptive {
+    background: url(../../assets/styles/strelitzia_640.png) no-repeat center;
+    width: 175px;
+    height: 131px;
+    margin: 0px 0px 0px 28px;
+  }
+
+
+  .btn-possition_pets {
+    margin: -32px 0px 0px 171px;
+    padding-bottom: 101px;
+  }
+
+  /* ### Pick and feed a friend ### */
+
+  .wrap-pick {
+    margin-top: -11px;
+    margin-bottom: -30px;
+  }
+
+  .title-pick {
+    margin-top: 11px;
+    font-size: 42px;
+  }
+
+  .info-pick {
+    margin-top: 22px;
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .text-pick1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 17px;
+  }
+
+  .text-pick2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  .subtitle-pick {
+    margin-top: 30px;
+  }
+
+  .btn-possition_pick {
+    margin-top: 216px;
+    margin-bottom: 50px;
+  }
+
+  .arrow_none {
+    display: none;
+  }
+
+  .arrow1 {
+    margin-top: -296px;
+    margin-left: -237px;
+  }
+  .arrow2 {
+    position: relative;
+    margin-top: -71px;
+    margin-left: 180px;
+  }
+
+  .arrow1_adaptive {
+    background: url(../../assets/icons/arrow_640.svg) no-repeat center;
+    width: 92.12px;
+    height: 69.66px;
+  }
+
+  .arrow2_adaptive {
+    background: url(../../assets/icons/arrow_640.svg) no-repeat center;
+    width: 92.12px;
+    height: 69.66px;
+  }
+
+  .pick-blok {
+    margin-left: -53px;
+  }
+
+  .choose {
+    margin-top: 18px;
+    margin-left: 40px;
+  }
+
+  .btn-possition_pick {
+    margin-top: 255px;
+    margin-bottom: 60px;
+  }
+
+  /* ### Testimonials ### */
+
+  .title-test {
+    margin: -80px 4px 0px 0px;
+  }
+
+  .blocks_comment {
+    flex-direction: column;
+  }
+
+  .gradient-block-test {
+    position: relative;
+    width: 600px;
+    height: 109px;
+    margin: 0;
+    background: #F1F3F2;
+    border-radius: 20px;
+    margin: 2px 0px 13px 21px;
+  }
+
+  .gradient-block-test::before {
+    width: 599px;
+    height: 108px;
+  }
+
+  .avatar {
+    margin-top: -21px;
+    margin-left: 11px;
+  }
+
+  .user_name {
+    margin-left: 58px;
+  }
+
+  .user_local {
+    margin-left: 57px;
+  }
+
+  .user_comment {
+    width: 568px;
+    height: 37px;
+  }
+
+  .slide_none {
+    display: none;
+  }
+
+  .btn-1_240 {
+    width: 240px;
+  }
+
+  .btn-possition_test {
+    margin-top: 27px;
+    margin-left: -1px;
+  }
+
+  .leav {
+    margin-top: -80px;
+    margin-left: 524px;
+
+  }
+
+  .leav_adaptive {
+    background: url(../../assets/styles/leav_foto_640.png) no-repeat center;
+    width: 116px;
+    height: 204px;
+    margin: 24px 0px 41px 0px;
+  }
+
+  /* ### Footer ### */
+
+  .size_box_footer {
+    width: 600px;
+    margin: -89px 0px 0px 0px;
+    padding: 13px 0px 0px 0px;
+  }
+
+  .position_footer {
+    margin-top: -109px;
+
+    // margin: -89px 0px 0px 94px;
+    // padding: 13px 39px 0px 0px;
+  }
+
+  .logo_footer_border_adaptive {
+    border: 1.18841px solid #FFFFFF;
+    width: 82px;
+    height: 52px;
+  }
+
+  .logo_footer_border_adaptive:hover {
+    border: 1.18841px solid #FE9013;
+  }
+
+  .footer_element_none {
+    display: none;
+  }
+
+  .social_block {
+    position: absolute;
+    margin: -21px 0px 0px 593px;
+    width: 30px;
+  }
+
+  .ico-wrap {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .btn-possition_footer {
+    margin-top: 32px;
+    margin-left: 19px;
+    // margin-bottom: 16px;
+  }
+
+  .design_position {
+    width: 228px;
+    margin: 152px 0px 0px 163px;
+  }
+
+  .footer-vertical-2 {
+    position: absolute;
+    margin: 209px 0px 0px -2px;
+  }
+
+  .nav-item {
+    margin-right: 37px;
+  }
+}
+
+@media (max-width: 639px) and (min-width: 320px) {
+
+  .container {
+    width: 320px;
+  }
+
+  .wrapper {
+    width: 300px;
+  }
+
+  //##########LOGO############//
+
+  .logo {
+    margin: 0px 0px 0px 0px;
+    border: none;
+  }
+
+
+  //##########BURGER############//
+
+  .fbmenu {
+    margin-left: 235px;
+    margin-top: 0px;
+  }
+
+
+  /* ### Watch your favorite animal online ### */
+  .panda_adaptive {
+    height: 463px;
+    background-size: 100%;
+    margin-top: -138px;
+  }
+
+  .circle {
+    margin: -303px 0px 0px 163px;
+    width: 119.09px;
+    height: 119.09px;
+  }
+
+  .intr-text {
+    width: 128.13px;
+    height: 102.44px;
+    font-size: 28px;
+    margin: -100px 0px 0px 182px;
+  }
+
+  .btn-possition_intro {
+    margin: 63px 0px -8px 12px;
+  }
+
+  /* ### The Backstage ### */
+
+  .wrap-backstage {
+    margin-top: -66px;
+    margin-right: 0px;
+    // margin-bottom: 94px;
+  }
+
+  .info-backstage {
+    margin: 61px 0px 0px 11px;
+    width: 300px;
+  }
+
+  .title {
+    margin: 44px 0px 0px -26px;
+    font-size: 24px;
+  }
+
+  .about-title {
+    margin: 11px 0px 0px -24px;
+  }
+
+  .subtitle {
+    margin: 20px 0px 0px -24px;
+  }
+
+  .about-subtitle {
+    margin: 9px 0px 0px -26px;
+  }
+
+  .flower {
+    margin: -551px 0px 0px 319px;
+    padding-bottom: 269px;
+  }
+
+  .flower_adaptive {
+    background: url(../../assets/styles/flower_foto_320.png) no-repeat center;
+    width: 35px;
+    height: 225px;
+    margin-left: -34px;
+  }
+
+  /* ### Pets ### */
+
+  .left-btn {
+    display: none;
+  }
+
+  .right-btn {
+    display: none;
+  }
+
+  .wrapper_pets {
+    flex-direction: column;
+    padding-bottom: 0px;
+    justify-content: space-around;
+    padding-left: 7px;
+    padding-right: 4px;
+  }
+
+  .pets_card {
+    width: 285px;
+    height: 332px;
+    margin-bottom: 20px;
+  }
+
+  .palm {
+    margin: -72px 0px 0px 0px;
+  }
+
+  .palm_adaptive {
+    background: url(../../assets/styles/palm_foto_320.png) no-repeat center;
+    width: 58px;
+    height: 72px;
+  }
+
+  .strelitzia {
+    margin: -65px 0px 0px 222px;
+  }
+
+  .strelitzia_adaptive {
+    background: url(../../assets/styles/strelitzia_320.png) no-repeat center;
+    width: 71px;
+    height: 68px;
+    margin: 0px 0px 0px 28px;
+  }
+
+  .btn-possition_pets {
+    margin: 0px 0px 0px 10px;
+    padding-bottom: 60px;
+  }
+
+  /* ### Pick and feed a friend ### */
+
+  .wrap-pick {
+    margin-top: -10px;
+    margin-bottom: -30px;
+  }
+
+  .title-pick {
+    margin-top: 21px;
+    font-size: 24px;
+  }
+
+  .info-pick {
+    margin-top: 12px;
+    margin-left: -3px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .text-pick1 {
+    display: none;
+  }
+
+  .text-pick2 {
+    display: none;
+  }
+
+  .subtitle-pick {
+    margin-top: 19px;
+    margin-left: 0px;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .pick-blok {
+    flex-direction: column;
+    margin-left: -53px;
+    margin-top: 67px;
+  }
+
+  .choose {
+    margin-top: -59px;
+    margin-left: 51px;
+  }
+
+  .choose-text {
+    margin-top: 12px;
+    padding-bottom: 108px;
+  }
+
+  .btn-possition_pick {
+    margin-top: 188px;
+    margin-bottom: 40px;
+  }
+
+  .arrow1 {
+    margin-top: -625px;
+    margin-left: 203px;
+  }
+  .arrow2 {
+    position: relative;
+    margin-top: 179px;
+    margin-left: 202px;
+  }
+
+  .arrow1_adaptive {
+    background: url(../../assets/icons/arrow_640.svg) no-repeat center;
+    transform: rotate(85deg);
+  }
+
+  .arrow2_adaptive {
+    background: url(../../assets/icons/arrow_640.svg) no-repeat center;
+    transform: rotate(85deg);
+  }
+
+  .btn-possition_pick {
+    margin-top: 267px;
+    margin-bottom: 40px;
+  }
+
+  /* ### Testimonials ### */
+
+  .title-test {
+    margin: -112px 0px -13px 0px;
+    font-size: 24px;
+  }
+
+  .gradient-block-test {
+    width: 299px;
+    margin: 2px 0px 13px 0px;
+  }
+
+  .gradient-block-test::before {
+    width: 298px;
+  }
+
+  .user_comment {
+    width: 274px;
+    height: 37px;
+  }
+
+  .btn-possition_test {
+    margin-top: 18px;
+    margin-left: -1px;
+  }
+
+  .leav {
+    margin-top: 10px;
+    margin-left: 268px;
+
+  }
+
+  .leav_adaptive {
+    background: url(../../assets/styles/leav_foto_320.png) no-repeat center;
+    width: 51px;
+    height: 94px;
+    margin: -15px 0px 80px 0px;
+  }
+
+   /* ### Footer ### */
+
+   .position_footer {
+    margin-top: -109px;
+
+    // margin: -89px 0px 0px 94px;
+    // padding: 13px 39px 0px 0px;
+  }
+
+  .logo_footer_border_adaptive {
+    border: none;
+    width: 131px;
+    height: 30px;
+    margin: 5px 0px 0px 96px;
+  }
+
+  .img_bamboo_down {
+    margin: -53px 0px 0px 71px;
+  }
+
+  .social_block {
+    flex-direction: row;
+    margin: 39px 0px 0px 63px;
+    // width: 30px;
+  }
+
+  .btn-possition_footer {
+    margin-top: 81px;
+    margin-left: 9px;
+  }
+
+  .footer-vertical-2 {
+    margin: 253px 0px 0px 10px;
+  }
+
+  .nav-item {
+    margin-right: 30px;
+  }
+
+  .ico-wrap {
+    margin: 21px 30px 0px 0px;
+  }
+
+  .nav:last-child {
+    margin-right: 0px;
+  }
+
+  .footer-vertical-3 {
+    margin-left: -306px;
+    margin-top: 33px;
+  }
+
+  .design {
+    font-size: 15px;
+    width: 214px;
+    margin: 10px 0px 0px -76px;
+  }
+
+  .design_position {
+    width: 148px;
+    margin: 154px 0px 0px 171px;
+  }
+
+  .menu_footer {
+    margin: 26px 0px 16px 2px;
+  }
+
 }

@@ -17,14 +17,15 @@
                     <a class="logo" href="../../../online-zoo/pages/main/index.html">
                         <h1>PetStory online</h1>
                         <div class="img_bamboo">
-                            <img src="../../../online-zoo/assets/styles/bamboo.svg" alt="bamboo">
+                            <div class="img_bamboo_small"></div>
+                            <img class="display_none" src="../../../online-zoo/assets/styles/bamboo.svg" alt="bamboo">
                         </div>
                     </a>
                     <nav>
-                        <!-- <div class="fbmenu">
+                        <div class="fbmenu">
                             <span></span>
-                        </div> -->
-                        <ul class="nav" id="menu">
+                        </div>
+                        <ul class="nav nav_header" id="menu">
                             <li class="nav-item"><a href="../../../online-zoo/pages/main/index.html" class="nav-link active">About</a></li>
                             <li class="nav-item"><a href="https://goo.gl/maps/Evaguc88cERtE2WY7" class="nav-link">Map</a></li>
                             <li class="nav-item"><a href="#help" class="nav-link">Zoos</a></li>
@@ -33,7 +34,7 @@
                         </ul>
                     </nav>
                     <a class="copyright" href="#">
-                        <h5><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></h5>
+                        <h5 class="copyright_none"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></h5>
                     </a>
                 </div>
             </div>
@@ -43,10 +44,11 @@
     <main>
         <section class="container">
             <div class="image intro">
-                <img src="../../../online-zoo/assets/images/Giant Panda.jpg" alt="panda">
+                <div class="panda_adaptive"></div>
+                <img class="display_none" src="../../../online-zoo/assets/images/Giant Panda.jpg" alt="panda">
                 <div class="circle"></div>
                 <div class="intr-text">Watch your <span style="color:#FFEE2E">favorite</span> animal online</div>
-                <button class="button-1 btn-possition_intro">wath online</button>
+                <button class="button-1 btn-possition_intro">watch online</button>
             </div>
         </section>
 
@@ -54,7 +56,8 @@
             <div class="wrapper">
                 <div class="wrap-backstage">
                     <div class="image-backstage">
-                        <img src="../../../online-zoo/assets/images/bamboo-cap.jpg" alt="bamboo-cap">
+                        <div class="bamboo_adaptive"></div>
+                        <img class="display_none" src="../../../online-zoo/assets/images/bamboo-cap.jpg" alt="bamboo-cap">
                     </div>
                     <div class="info-backstage">
                         <h2 class="title">The Backstage of the Wilderness World.</h2>
@@ -65,7 +68,8 @@
                 </div>
             </div>
             <div class="flower">
-                <img src="../../../online-zoo/assets/styles/flower_foto.png" alt="flower_foto1">
+                <div class="flower_adaptive"></div>
+                <img class="display_none" src="../../../online-zoo/assets/styles/flower_foto.png" alt="flower_foto1">
             </div>
         </section>
 
@@ -78,21 +82,21 @@
                         <p class="kind_of">giant pandas</p>
                         <p class="native">Native to Southwest China</p>
                         <div class="icon_choose_banana">
-                            <img src="../../../online-zoo/assets/styles/banana-bamboo_icon.png" alt="banana">
+                            <img class="icon_choose_banana_size" src="../../../online-zoo/assets/styles/banana-bamboo_icon.png" alt="banana">
                         </div>
                     </div>
                     <div class="pets_card pets2">
                         <p class="kind_of">eagles</p>
                         <p class="native">Native to South America</p>
                         <div class="icon_choose_fish">
-                            <img src="../../../online-zoo/assets/styles/meet-fish_icon.png" alt="fish">
+                            <img class="icon_choose_fish_size" src="../../../online-zoo/assets/styles/meet-fish_icon.png" alt="fish">
                         </div>
                     </div>
-                    <div class="pets_card pets3">
+                    <div class="pets_card pets3 two_cards">
                         <p class="kind_of">gorillas</p>
                         <p class="native">Native to Congo</p>
                         <div class="icon_choose_banana">
-                            <img src="../../../online-zoo/assets/styles/banana-bamboo_icon.png" alt="banana">
+                            <img class="icon_choose_banana_size" src="../../../online-zoo/assets/styles/banana-bamboo_icon.png" alt="banana">
                         </div>
                     </div>
                 </div>
@@ -102,21 +106,21 @@
                         <p class="kind_of">Two-toed Sloth</p>
                         <p class="native">Mesoamerica, South America</p>
                         <div class="icon_choose_banana">
-                            <img src="../../../online-zoo/assets/styles/banana-bamboo_icon.png" alt="banana">
+                            <img class="icon_choose_banana_size" src="../../../online-zoo/assets/styles/banana-bamboo_icon.png" alt="banana">
                         </div>
                     </div>
                     <div class="pets_card pets5">
                         <p class="kind_of">cheetahs</p>
                         <p class="native">Native to Africa</p>
                         <div class="icon_choose_fish">
-                            <img src="../../../online-zoo/assets/styles/meet-fish_icon.png" alt="fish">
+                            <img class="icon_choose_fish_size" src="../../../online-zoo/assets/styles/meet-fish_icon.png" alt="fish">
                         </div>
                     </div>
-                    <div class="pets_card pets6">
+                    <div class="pets_card pets6 two_cards">
                         <p class="kind_of">Penguins</p>
                         <p class="native">Native to Antarctica</p>
                         <div class="icon_choose_fish">
-                            <img src="../../../online-zoo/assets/styles/meet-fish_icon.png" alt="fish">
+                            <img class="icon_choose_fish_size" src="../../../online-zoo/assets/styles/meet-fish_icon.png" alt="fish">
                         </div>
                     </div>
                 </div>
@@ -126,10 +130,12 @@
                 <button class="button-1">choose your favorite</button>
             </div>
             <div class="palm">
-                <img src="../../../online-zoo/assets/styles/palm_foto.png" alt="palm">
+                <div class="palm_adaptive"></div>
+                <img class="display_none" src="../../../online-zoo/assets/styles/palm_foto.png" alt="palm">
             </div>
             <div class="strelitzia">
-                <img src="../../../online-zoo/assets/styles/strelitzia.png" alt="strelitzia">
+                <div class="strelitzia_adaptive"></div>
+                <img class="display_none" src="../../../online-zoo/assets/styles/strelitzia.png" alt="strelitzia">
             </div>
         </section>
 
@@ -160,12 +166,16 @@
                         <p class="choose-text">Your favourite animal gets delicious dish</p>
                     </div>
                 </div>
-                <div class="arrow1">
-                    <img src="../../../online-zoo/assets/icons/arrow.svg" alt="arrow">
-                </div>
-                <div class="arrow2">
-                    <img src="../../../online-zoo/assets/icons/arrow.svg" alt="arrow">
-                </div>
+                <!-- <div class="arrow_box"> -->
+                    <div class="arrow1">
+                        <div class="arrow1_adaptive"></div>
+                        <img class="arrow_none" src="../../../online-zoo/assets/icons/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="arrow2">
+                        <div class="arrow2_adaptive"></div>
+                        <img class="arrow_none" src="../../../online-zoo/assets/icons/arrow.svg" alt="arrow">
+                    </div>
+                <!-- </div> -->
                 <button class="button-1 btn-possition_pick"><a href="../../../online-zoo/pages/donate/index.html">Feed a friend now</a></button>
             </div>
         </section>
@@ -207,7 +217,7 @@
 
                                 </p>
                         </div>
-                        <div class="gradient-block-test">
+                        <div class="gradient-block-test display_none">
                             <div>
                                 <p class="user_name">Mila Riksha</p>
                                 <img src="../../../online-zoo/assets/images/user_icon4.png" class="avatar" alt="icon">
@@ -219,13 +229,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="slidecontainer">
+                <div class="slidecontainer slide_none">
                     <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
                 </div>
 
-                <button class="button-1 btn-possition_test">leave feedback</button>
+                <button class="button-1 btn-possition_test btn-1_240">leave feedback</button>
                 <div class="leav">
-                    <img src="../../../online-zoo/assets/styles/leav_foto.png" alt="leav">
+                    <div class="leav_adaptive"></div>
+                    <img class="display_none" src="../../../online-zoo/assets/styles/leav_foto.png" alt="leav">
                 </div>
 
             </div>
@@ -233,10 +244,10 @@
     </main>
 
     <footer class="container black-block position_footer">
-        <div class="wrapper">
+        <div class="wrapper size_box_footer">
             <div class="footer-horizont">
-                <div class="footer-vertical-1">
-                    <a class="logo position_footer_logo" href="../../../online-zoo/pages/main/index.html">
+                <div class="footer-vertical-1 ">
+                    <a class="logo position_footer_logo logo_footer_border_adaptive" href="../../../online-zoo/pages/main/index.html">
                         <h4>PetStory online</h4>
                         <div class="img_bamboo_down">
                             <img src="../../../online-zoo/assets/styles/bamboo.svg" alt="bamboo">
@@ -246,19 +257,19 @@
                     <div class="social_block">
                         <div class="ico-wrap">
                             <img class="ico_f" src="../../../online-zoo/assets/icons/facebook_26x26.svg">
-                            <a href="https://facebook.com/"><p class="font-pasition">Facebook</p></a>
+                            <a href="https://facebook.com/"><p class="font-pasition footer_element_none">Facebook</p></a>
                         </div>
                         <div class="ico-wrap">
                             <img class="ico_t" src="../../../online-zoo/assets/icons/twitter_26x26.svg">
-                            <a href="https://twitter.com/"><p class="font-pasition">Twitter</p></a>
+                            <a href="https://twitter.com/"><p class="font-pasition footer_element_none">Twitter</p></a>
                         </div>
                         <div class="ico-wrap">
                             <img class="ico_i" src="../../../online-zoo/assets/icons/instagram_26x26.svg">
-                            <a href="https://instagram.com/"><p class="font-pasition">Instagram</p></a>
+                            <a href="https://instagram.com/"><p class="font-pasition footer_element_none">Instagram</p></a>
                         </div>
                         <div class="ico-wrap">
                             <img class="ico_y" src="../../../online-zoo/assets/icons/youtube_26x26.svg">
-                            <a href="https://youtube.com/"><p class="font-pasition">YouTube</p></a>
+                            <a href="https://youtube.com/"><p class="font-pasition footer_element_none">YouTube</p></a>
                         </div>
                     </div>
                 </div>
@@ -273,10 +284,10 @@
                     </nav>
                 </div>
                 <div class="footer-vertical-3">
-                    <div><p class="sub-footer">Subscribe to our news</p></div>
+                    <div><p class="sub-footer footer_element_none">Subscribe to our news</p></div>
                     <form class="mail-box">
-                        <input type="email" name="email" id="email" required="required" class="contact_info" placeholder="Enter your email">
-                        <button class="button-2">Submit</button>
+                        <input type="email" name="email" id="email" required="required" class="contact_info footer_element_none" placeholder="Enter your email">
+                        <button class="button-2 footer_element_none">Submit</button>
                     </form>
 
 

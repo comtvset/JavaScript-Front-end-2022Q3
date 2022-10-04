@@ -321,12 +321,12 @@ h5 {
     padding-bottom: 177px;
 }
 
-.wrap_donate {
-    // display: flex;
-    // flex-direction: column;
-    // // justify-content: flex-start;
-    // align-items: center;
-}
+// .wrap_donate {
+//     // display: flex;
+//     // flex-direction: column;
+//     // // justify-content: flex-start;
+//     // align-items: center;
+// }
 
 .titel {
     @include p-size-36();
@@ -598,9 +598,9 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.amount-input::placeholder {
-    // color: blue;
-}
+// .amount-input::placeholder {
+//     // color: blue;
+// }
 
 .amount-input:focus:valid {
     border: 1px solid #4B9200;
@@ -903,5 +903,6 @@ input::-webkit-inner-spin-button {
     margin: 26px 0px 16px 23px;
     padding-left: 0px;
 }
+
 
 
