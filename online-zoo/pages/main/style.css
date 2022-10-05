@@ -27,7 +27,7 @@
 body {
   overflow: auto;
   position: relative;
-  background-color: #030303;
+  background-color: #ffffff;
 }
 
 body.lock {
@@ -125,7 +125,7 @@ h4 {
   background-color: #000000;
   position: relative;
   z-index: 1;
-  width: 1600px;
+  width: 100%;
 }
 
 .wrapper_header {
@@ -575,7 +575,7 @@ h5 {
 
 /* ### Pick and feed a friend ### */
 .gradient-block {
-  width: 1600px;
+  width: 100%;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   opacity: 0.9;
   padding-top: 69px;
@@ -1164,7 +1164,7 @@ h5 {
     background-color: #000000;
     position: relative;
     z-index: 1;
-    width: 1000px;
+    width: 100%;
   }
   .nav-item {
     margin-right: 48px;
@@ -1299,6 +1299,7 @@ h5 {
   .gradient-block {
     padding-top: 30px;
     padding-bottom: 50px;
+    width: 100%;
   }
   .title-pick {
     margin-top: 31px;
@@ -1393,7 +1394,7 @@ h5 {
     z-index: 6;
   }
   .container {
-    width: 640px;
+    width: 100%;
   }
   .wrapper {
     width: 640px;
@@ -1767,7 +1768,7 @@ h5 {
   .size_box_footer {
     width: 600px;
     margin: -89px 0px 0px 0px;
-    padding: 13px 0px 0px 0px;
+    padding: 13px 0px 16px 0px;
   }
   .position_footer {
     margin-top: -109px;
@@ -1809,7 +1810,7 @@ h5 {
 }
 @media (max-width: 639px) and (min-width: 320px) {
   .container {
-    width: 320px;
+    width: 100%;
   }
   .wrapper {
     width: 300px;
@@ -1870,9 +1871,10 @@ h5 {
   }
   .flower_adaptive {
     background: url(../../assets/styles/flower_foto_320.png) no-repeat center;
-    width: 35px;
+    width: 100%;
     height: 225px;
     margin-left: -34px;
+    padding-left: 35px;
   }
   /* ### Pets ### */
   .left-btn {
@@ -2060,5 +2062,8 @@ h5 {
   }
   .menu_footer {
     margin: 26px 0px 16px 2px;
+  }
+  .size_box_footer {
+    padding: 13px 0px 72px 0px;
   }
 }/*# sourceMappingURL=style.css.map */
