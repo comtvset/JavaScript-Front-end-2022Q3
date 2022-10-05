@@ -31,7 +31,7 @@
 body {
     overflow: auto;
     position: relative;
-    background-color: #030303;
+    background-color: #ffffff;
 }
 
 body.lock {
@@ -189,7 +189,8 @@ h4 {
     background-color: #000000;
     position: relative;
     z-index: 1;
-    width: 1600px;
+    // width: 1600px;
+    width: 100%;
 }
 
 .wrapper_header {
@@ -307,9 +308,10 @@ h5 {
 
 .gradient-block {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    width: 1600px;
+    // width: 1600px;
     margin-top: -4px;
     padding-bottom: 177px;
+    width: 100%;
 }
 
 .titel {
@@ -463,6 +465,7 @@ h5 {
     display: flex;
     align-items: center;
     padding-top: 0px;
+    padding-right: 12px;
 }
 
 .dollar-radio {
@@ -477,6 +480,7 @@ h5 {
     display: flex;
     align-items: center;
     padding-top: 33px;
+    width: 74px;
 }
 
 .dollar-label:hover {
@@ -601,11 +605,11 @@ input::-webkit-inner-spin-button {
 .radio-container-amount {
     margin: 0 auto;
     margin-top: 20px;
-    width: 197px;
+    width: 211px;
     height: 25px;
     display: flex;
     justify-content: space-between;
-    margin: 8px 16px 45px 0px;
+    margin: 8px -22px 45px 0px;
 }
 
 .radio-container-monthly {
@@ -634,6 +638,7 @@ input::-webkit-inner-spin-button {
     height: 14px;
     border: 1px solid #FE9013;
     border-radius: 50%;
+    margin-left: -13px;
 }
 
 .custom-amount-radio:checked +label::before {
@@ -877,7 +882,8 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 1599px) {
     .container {
-      width: 1000px;
+    //   width: 1000px;
+      width: 100%;
     }
 
     .wrapper {
@@ -888,7 +894,8 @@ input::-webkit-inner-spin-button {
       background-color: #000000;
       position: relative;
       z-index: 1;
-      width: 1000px;
+    //   width: 1000px;
+      width: 100%;
     }
 
     .nav-item {
@@ -944,7 +951,8 @@ input::-webkit-inner-spin-button {
     /* ### Pick and feed a friend ### */
 
     .gradient-block {
-        width: 1000px;
+        // width: 1000px;
+        width: 100%;
     }
 
     .titel {
@@ -996,23 +1004,23 @@ input::-webkit-inner-spin-button {
     }
 
     .radio-container-2000 > .dollar-label {
-        padding-left: 45px;
+        padding-left: 15px;
     }
 
     .radio-container-1000 > .dollar-label {
-        padding-left: 45px;
+        padding-left: 15px;
     }
 
     .radio-container-500 > .dollar-label {
-        padding-left: 25px;
+        padding-left: 15px;
     }
 
     .radio-container-250 > .dollar-label {
-        padding-left: 30px;
+        padding-left: 15px;
     }
 
     .radio-container-100 > .dollar-label {
-        padding-left: 30px;
+        padding-left: 15px;
     }
 
     .radio-container-50 > .dollar-label {
@@ -1034,16 +1042,16 @@ input::-webkit-inner-spin-button {
     }
 
     .footer-vertical-2 {
-        margin: 345px 0px 24px -31px;
+        margin: 345px 0px 24px -18px;
     }
 
     .footer-vertical-3 {
-        margin-left: -88px;
+        margin-left: -102px;
         margin-top: 41px;
     }
 
     .design_position {
-        margin: 216px 0px 0px 169px;
+        margin: 217px 0px 0px 169px;
     }
 }
 
@@ -1057,7 +1065,8 @@ input::-webkit-inner-spin-button {
       }
 
     .container {
-        width: 640px;
+        // width: 640px;
+        width: 100%;
       }
       .wrapper {
         width: 640px;
@@ -1209,7 +1218,8 @@ input::-webkit-inner-spin-button {
 /* ### Pick and feed a friend ### */
 
     .gradient-block {
-        width: 640px;
+        // width: 640px;
+        width: 100%;
     }
 
     .pick_container {
@@ -1264,13 +1274,17 @@ input::-webkit-inner-spin-button {
     }
 
     .donate-menu-container {
-        width: 600px;
+        width: 640px;
         padding-top: 0px;
-        margin-left: 19px;
+        margin-left: -6px;
+    }
+
+    .donate-menu-container-radio:last-child {
+        width: 115px;
     }
 
     .donate-menu-line {
-        width: 80%;
+        width: 86%;
     }
 
     .radio-container-2000,
@@ -1291,11 +1305,11 @@ input::-webkit-inner-spin-button {
     }
 
     .radio-container-50 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 8px;
     }
 
     .radio-container-25 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 15px;
     }
 
     .input-number-wrapper {
@@ -1379,12 +1393,18 @@ input::-webkit-inner-spin-button {
   .nav-item {
     margin-right: 37px;
   }
+
+  .footer-vertical-3 {
+    margin-left: -90px;
+    padding-bottom: 16px;
+}
 }
 
 @media (max-width: 639px) and (min-width: 320px) {
 
     .container {
-      width: 320px;
+    //   width: 320px;
+      width: 100%;
     }
 
     .wrapper {
@@ -1424,8 +1444,9 @@ input::-webkit-inner-spin-button {
      /* ### Pick and feed a friend ### */
 
     .gradient-block {
-        width: 320px;
+        // width: 320px;
         padding-bottom: 1px;
+        width: 100%;
     }
 
     .titel {
@@ -1503,7 +1524,7 @@ input::-webkit-inner-spin-button {
     .donate-menu-title {
         padding-left: 0px;
         padding-top: 0px;
-        margin: 21px 0px 0px 4px;
+        margin: 21px 0px 0px 0px;
     }
 
     .donate-menu-progressbar {
@@ -1526,12 +1547,16 @@ input::-webkit-inner-spin-button {
         width: 300px;
         left: 5px;
         top: 2px;
-        margin-left: 0px;
+        margin-left: -14px;
     }
 
     .donate-menu-container-radio {
         width: 65px;
         padding-top: 0px;
+    }
+
+    .donate-menu-container-radio:last-child {
+        width: 45px;
     }
 
     .dollar-radio {
@@ -1566,23 +1591,23 @@ input::-webkit-inner-spin-button {
     }
 
     .radio-container-500 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 16px;
     }
 
     .radio-container-250 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 16px;
     }
 
     .radio-container-100 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 16px;
     }
 
     .radio-container-50 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 16px;
     }
 
     .radio-container-25 > .dollar-label {
-        padding-left: 0px;
+        padding-left: 26px;
     }
 
     .custom-radio:checked+label + .dollar-label > .dollar-radio {
@@ -1596,6 +1621,7 @@ input::-webkit-inner-spin-button {
     .amount-input {
         width: 180px;
         height: 42px;
+        margin: 1px 0px 7px 0px;
     }
 
     .input-number-dollar {
@@ -1615,7 +1641,9 @@ input::-webkit-inner-spin-button {
         width: 301px;
     }
     .btn-position_pick {
-        margin-left: -1px;
+        margin-top: -11px;
+        margin-left: 0px;
+        margin-bottom: 59px;
     }
 
 
@@ -1651,7 +1679,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer-vertical-2 {
-    margin: 253px 0px 0px 10px;
+    margin: 253px 0px 0px 19px;
   }
 
   .nav-item {
@@ -1662,13 +1690,14 @@ input::-webkit-inner-spin-button {
     margin: 21px 30px 0px 0px;
   }
 
-  .nav:last-child {
+  .nav-item:last-child {
     margin-right: 0px;
   }
 
   .footer-vertical-3 {
     margin-left: -306px;
-    margin-top: 33px;
+    margin-top: 70px;
+    padding-bottom: 72px;
   }
 
   .design {
@@ -1679,7 +1708,7 @@ input::-webkit-inner-spin-button {
 
   .design_position {
     width: 148px;
-    margin: 154px 0px 0px 171px;
+    margin: 116px 0px 0px 171px;
   }
 
   .menu_footer {
