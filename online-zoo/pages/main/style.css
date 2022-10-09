@@ -920,6 +920,7 @@ h5 {
   margin: 0;
   background: #F1F3F2;
   border-radius: 20px;
+  margin-right: 28px;
 }
 
 .gradient-block-test::before {
@@ -983,6 +984,7 @@ h5 {
   width: 237px;
   height: 309px;
   overflow: hidden;
+  margin-right: 29px;
 }
 
 .block_test {
@@ -1053,6 +1055,19 @@ h5 {
 .leav {
   margin-top: -95px;
   margin-left: 1353px;
+}
+
+.slider-comment {
+  width: 1160px;
+  height: 392px;
+  overflow: hidden;
+}
+
+.slider-line {
+  width: 3182px;
+  display: flex;
+  position: relative;
+  transition: all ease 1s;
 }
 
 /* ### Footer ### */
@@ -1741,6 +1756,9 @@ h5 {
     padding-left: 6px;
     padding-right: 4px;
   }
+  .pets-container {
+    margin-top: 0px;
+  }
   .two_cards {
     display: none;
   }
@@ -1917,7 +1935,7 @@ h5 {
     width: 240px;
   }
   .btn-possition_test {
-    margin-top: 27px;
+    margin-top: 29px;
     margin-left: -1px;
   }
   .leav {
@@ -1929,6 +1947,16 @@ h5 {
     width: 116px;
     height: 204px;
     margin: 24px 0px 41px 0px;
+  }
+  .slider-line {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+  }
+  .slider-comment {
+    height: 370px;
+    width: 640px;
   }
   /* ### Footer ### */
   .size_box_footer {
@@ -2180,6 +2208,12 @@ h5 {
     width: 51px;
     height: 94px;
     margin: -15px 0px 80px 0px;
+  }
+  .slider-comment {
+    width: 300px;
+  }
+  .slider-line {
+    width: 300px;
   }
   /* ### Footer ### */
   .position_footer {

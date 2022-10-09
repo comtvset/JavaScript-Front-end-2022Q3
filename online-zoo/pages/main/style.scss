@@ -876,6 +876,7 @@ margin: -275px 0px 0px 1232px;
   border-radius: 20px;
   // margin-left: 10px;
   // margin-right: 17px;
+  margin-right: 28px; //<---- бордер карточки
 }
 
 .gradient-block-test::before {
@@ -942,6 +943,7 @@ margin: -275px 0px 0px 1232px;
   width: 237px;
   height: 309px;
   overflow: hidden;
+  margin-right: 29px; //<---- фон карточки
 }
 
 .block_test {
@@ -1018,6 +1020,24 @@ margin: -275px 0px 0px 1232px;
   margin-top: -95px;
   margin-left: 1353px;
 }
+
+.slider-comment {
+  width: 1160px;
+  height: 392px;
+  overflow: hidden;
+}
+
+.slider-line {
+  width: 3182px;
+  display: flex;
+  position: relative;
+  transition: all ease 1s;
+  // animation: 2s ease-in-out;
+}
+// .gradient-block-test > input {
+//   position: absolute;
+// }
+
 
 /* ### Footer ### */
 .position_footer {
@@ -1787,6 +1807,10 @@ margin: -275px 0px 0px 1232px;
     padding-right: 4px;
   }
 
+  .pets-container {
+    margin-top: 0px;
+  }
+
   .two_cards {
     display: none;
   }
@@ -2005,7 +2029,7 @@ margin: -275px 0px 0px 1232px;
   }
 
   .btn-possition_test {
-    margin-top: 27px;
+    margin-top: 29px;
     margin-left: -1px;
   }
 
@@ -2020,6 +2044,18 @@ margin: -275px 0px 0px 1232px;
     width: 116px;
     height: 204px;
     margin: 24px 0px 41px 0px;
+  }
+
+  .slider-line {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+  }
+
+  .slider-comment {
+    height: 370px;
+    width: 640px;
   }
 
   /* ### Footer ### */
@@ -2348,6 +2384,14 @@ margin: -275px 0px 0px 1232px;
     width: 51px;
     height: 94px;
     margin: -15px 0px 80px 0px;
+  }
+
+  .slider-comment {
+    width: 300px;
+  }
+
+  .slider-line {
+    width: 300px;
   }
 
    /* ### Footer ### */
