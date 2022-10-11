@@ -217,6 +217,10 @@ h4 {
   margin: -39px 0px 0px 9px;
 }
 
+.logo_only_burger {
+  display: none;
+}
+
 
 
 .img_bamboo_down {
@@ -284,6 +288,10 @@ h5 {
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF;
+}
+
+.copyright_only_burger {
+  display: none;
 }
 
 .active:hover {
@@ -1657,7 +1665,7 @@ margin: -275px 0px 0px 1232px;
   }
   .fbmenu._active span {
     top: 50%;
-    left: -10px;
+    left: 5px;
     -webkit-transform: rotate(90deg) translate(0px, 50%);
             transform: rotate(90deg) translate(0px, 50%);
   }
@@ -1679,12 +1687,13 @@ margin: -275px 0px 0px 1232px;
     position: fixed;
     top: 0;
     left: 100%;
-    width: 320px;
+    width: 100%;
     height: 100%;
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    background-color: #292929;
-    padding-top: 237px;
+    background-color: #E5E5E5;
+    opacity: 0.97;
+    padding-top: 23px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     margin: 0;
@@ -1696,12 +1705,21 @@ margin: -275px 0px 0px 1232px;
     transition: all 0.6s ease 0s;
     z-index: 3;
     overflow-y: scroll;
-    text-align: center;
+    // text-align: center;
   }
   .menu__box._active {
     -webkit-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
   }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .nav-item_bg {
+    margin: -1px 0px 17px -29px;
+  }
+
   .logo._active {
     z-index: 10;
   }
@@ -1709,6 +1727,95 @@ margin: -275px 0px 0px 1232px;
   .copyright_none {
     display: none;
   }
+
+  .copyright_only_burger {
+    display: block;
+
+    font-weight: 400;
+    font-size: 18px;
+    margin: -2px 0px 0px -30px;
+    color: #333B41;
+    transition: all 0.3s ease;
+  }
+
+  .copyright_only_burger:hover, .copyright_only_burger:focus, .copyright_only_burger:active {
+    color: #F9804B;
+    transition: all 0.3s ease;
+  }
+
+
+  .logo_only_burger {
+    display: block;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 72.6px;
+    height: 46.6px;
+    cursor: pointer;
+    position: relative;
+    border: 1.18841px solid #FE9013;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+
+    margin: -12px 0px 35px -29px;
+  }
+
+  .logo_name {
+    @include p-size-16();
+    font-weight: 400;
+    font-size: 16.5px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    letter-spacing: 0.01em;
+    padding-top: 3px;
+  }
+
+  .logo_only_burger:hover {
+    border: 1.18841px solid #333B41;
+    .logo_name {
+      color: #333B41;
+      transition: all 0.3s ease;
+    }
+
+  }
+
+
+  .img_bamboo_burger {
+    background: url(../../assets/styles/bamboo_orange.svg) no-repeat center;
+    width: 10.5px;
+    height: 17.6px;
+    margin: 17px 0px 0px -2px;
+  }
+
+  .nav-link_bg {
+    color: #333B41;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px 0px 0px 0px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link_bg:hover, .nav-link_bg:focus, .nav-link_bg:active {
+    color: #F9804B;
+    transition: all 0.3s ease;
+  }
+
+
+
+  // .copyright {
+  //   color: #f00b0b;
+  //   position: relative;
+  //   z-index: 1;
+  // }
 
   /* ### Watch your favorite animal online ### */
 
