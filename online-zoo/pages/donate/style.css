@@ -1411,7 +1411,7 @@ input::-webkit-inner-spin-button {
   }
   /* ### HEADER ### */
   .nav_header {
-    display: none;
+    display: block;
   }
   .wrapper_header {
     height: 34px;
@@ -1427,6 +1427,9 @@ input::-webkit-inner-spin-button {
   .fbmenu {
     margin-left: 235px;
     margin-top: 0px;
+  }
+  .menu__box {
+    display: block;
   }
   /* ### Pick and feed a friend ### */
   .gradient-block {

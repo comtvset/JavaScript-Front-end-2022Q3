@@ -1511,14 +1511,14 @@ input::-webkit-inner-spin-button {
     }
 
     /* ### HEADER ### */
-
-    .nav_header {
-        display: none;
+      .nav_header {
+        display: block;
       }
 
       .wrapper_header {
         height: 34px;
       }
+
 
       .panda_adaptive {
         background: url(../../assets/images/panda_bg_320.jpg) no-repeat center;
@@ -1537,6 +1537,9 @@ input::-webkit-inner-spin-button {
         .fbmenu {
             margin-left: 235px;
             margin-top: 0px;
+        }
+        .menu__box {
+            display: block;
         }
 
 
