@@ -1,6 +1,35 @@
+let imgBlock = document.querySelectorAll('.random-img');
+let left = document.querySelector('.left-btn');
+let right = document.querySelector('.right-btn');
+let button = document.querySelector('.btn-possition_pets');
+
+let imgArray = [
+"url('../../../online-zoo/assets/images/two-toed_sloth.jpg')",
+"url('../../../online-zoo/assets/images/cheetahs.jpg')",
+"url('../../../online-zoo/assets/images/eagles.jpg')",
+"url('../../../online-zoo/assets/images/gnawer.jpg')",
+"url('../../../online-zoo/assets/images/hamster.jpg')",
+"url('../../../online-zoo/assets/images/gorillas.jpg')",
+"url('../../../online-zoo/assets/images/hippo.jpg')",
+"url('../../../online-zoo/assets/images/panda.jpg')",
+"url('../../../online-zoo/assets/images/penguins.jpg')",
+"url('../../../online-zoo/assets/images/rodents.jpg')",
+"url('../../../online-zoo/assets/images/squirrel.jpg')",
+"url('../../../online-zoo/assets/images/meerkat.jpg')",
+"url('../../../online-zoo/assets/images/monkey.jpg')",
+"url('../../../online-zoo/assets/images/tiger.jpg')",
+"url('../../../online-zoo/assets/images/wild_cat.jpg')",
+"url('../../../online-zoo/assets/images/monkey2.jpg')",
+"url('../../../online-zoo/assets/images/elephant.jpg')",
+"url('../../../online-zoo/assets/images/red_panda.jpg')",
+"url('../../../online-zoo/assets/images/camel.jpg')",
+]
+
+
 let items = document.querySelectorAll('.pets-collection');
 let currentItem = 0;
 let isEnabled = true;
+let pets = document.querySelectorAll('.pets_card');
 
 function changeCurrentItem(n) {
     currentItem = (n + items.length) % items.length;
@@ -39,6 +68,8 @@ document.querySelector('.left-btn').addEventListener('click', function() {
     if (isEnabled) {
         previousItem(currentItem);
     }
+    setTimeout(() => {random()}, 500);
+
 });
 
 
@@ -46,7 +77,18 @@ document.querySelector('.right-btn').addEventListener('click', function() {
     if (isEnabled) {
         nextItem(currentItem);
     }
+    setTimeout(() => {random()}, 500);
 });
+
+function random () {
+for (let i = 0; i < imgBlock.length; i++){
+    let randimage = imgArray[Math.ceil(Math.random() * imgArray.length)];
+    imgBlock[i].style.backgroundImage = randimage;
+    };
+}
+
+
+
 
 
 
@@ -120,3 +162,5 @@ function deactiveBurger() {
 
 
 // POPUP
+
+
