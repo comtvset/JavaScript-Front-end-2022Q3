@@ -48,21 +48,17 @@ let popupBg = document.querySelector('.popup_bg');
 let popup = document.querySelector('.popup');
 let openPopupButtons = document.querySelectorAll('.open-popup');
 let closePopupButton = document.querySelector('.close-popup');
-let user = document.querySelector('.user_name_popup');
-let avatar = document.querySelector('.avatar_popup');
+let copyClass = document.querySelector('.gradient-block-test');
+
+
 
 openPopupButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
+        document.querySelector('.gradient-block-test_popup').innerHTML = e.currentTarget.innerHTML;
         popupBg.classList.add('active');
         popup.classList.add('active');
-
         document.body.style.overflowY = "hidden";
-
-        //  for (let i = 0; i < userArr.length; i++){
-        //     if(id = 1) {user.innerHTML = userArr[1]}
-        // }
-
     })
 
 })
@@ -70,6 +66,7 @@ openPopupButtons.forEach((button) => {
 closePopupButton.addEventListener('click',() => {
     popupBg.classList.remove('active');
     popup.classList.remove('active');
+    document.body.style.overflow = "auto";
 });
 
 
