@@ -17,6 +17,7 @@ const anotherAmount = document.querySelector('#another-amount');
     })
   })
 
+////////////////////////////////////////////////////////////////
 
 
 if (fbMenu) {
@@ -29,19 +30,12 @@ const about = document.getElementById('menu');
 logo.addEventListener('click', deactiveBurger);
 main.addEventListener('click', deactiveBurger);
 
-// about.addEventListener('click', function() {
-//     boxMenu.classList.remove('_active')
-// });
 
 function activeBurger() {
     document.body.classList.toggle('_lock');
     fbMenu.classList.toggle('_active');
     boxMenu.classList.toggle('_active');
     document.body.classList.toggle('_active');
-    // logo.classList.toggle('_active');
-    introOp.classList.toggle('_active');
-    imgOp.classList.toggle('_active');
-    aboutOp.classList.toggle('_active');
 }
 
 function deactiveBurger() {
@@ -49,9 +43,5 @@ function deactiveBurger() {
     boxMenu.classList.remove('_active');
     fbMenu.classList.remove('_active');
     document.body.classList.remove('_active');
-    // logo.classList.remove('_active');
-    introOp.classList.remove('_active');
-    imgOp.classList.remove('_active');
-    aboutOp.classList.remove('_active');
 }
 

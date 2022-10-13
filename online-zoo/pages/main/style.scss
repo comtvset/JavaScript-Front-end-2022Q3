@@ -1099,11 +1099,6 @@ margin: -275px 0px 0px 1232px;
   transition: all 0.3s ease;
 }
 
-// .font-soc:hover {
-//   color: #4B9200;
-//   transition: all 0.3s ease;
-// }
-
 .sub-footer {
   @include p-size-24();
   line-height: 120%;
@@ -1227,8 +1222,6 @@ margin: -275px 0px 0px 1232px;
   border: 1px solid #D31414;
   border-radius: 5px;
   margin-left: 10px;
-  // border: 0px;
-  // margin: 60px 0px 0px 983px;
   cursor: pointer;
   text-indent: 3px;
   transition: all 0.3s ease;
@@ -1723,7 +1716,7 @@ margin: -275px 0px 0px 1232px;
 
  //##########BURGER############//
 
-  .fbmenu {
+   .fbmenu {
     z-index: 4;
     position: relative;
     height: 10px;
@@ -1776,7 +1769,9 @@ margin: -275px 0px 0px 1232px;
     -webkit-transform: rotate(90deg) translate(0px, 50%);
             transform: rotate(90deg) translate(0px, 50%);
   }
-
+  body._lock {
+    overflow: hidden;
+  }
 
   .menu__box {
     display: block;
@@ -1905,14 +1900,6 @@ margin: -275px 0px 0px 1232px;
     transition: all 0.3s ease;
   }
 
-
-
-  // .copyright {
-  //   color: #f00b0b;
-  //   position: relative;
-  //   z-index: 1;
-  // }
-
   /* ### Watch your favorite animal online ### */
 
   .display_none {
@@ -1991,7 +1978,6 @@ margin: -275px 0px 0px 1232px;
 
   .flower_adaptive {
     background: url(../../assets/styles/flower_foto_640.png) no-repeat center;
-    // width: 231px;
     height: 476px;
     margin-left: 49px;
   }
