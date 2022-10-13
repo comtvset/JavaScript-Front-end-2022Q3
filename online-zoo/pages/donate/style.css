@@ -512,6 +512,7 @@ h5 {
 
 .custom-radio:checked + label {
   background: url("../../assets/icons/roller_icon.svg");
+  opacity: 1;
 }
 
 .custom-radio:checked + label + .dollar-label > .dollar-count {

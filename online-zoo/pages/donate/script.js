@@ -6,6 +6,19 @@ const introOp = document.querySelector('.intro');
 const imgOp = document.querySelector('.img-puppy');
 const aboutOp = document.querySelector('.wrapper_about-1');
 
+//DONATE
+
+const anotherAmount = document.querySelector('#another-amount');
+
+    let customRadio = document.querySelectorAll('.custom-radio');
+    customRadio.forEach(scaleMark => {
+    scaleMark.addEventListener('click', (e) => {
+      document.querySelector('#another-amount').value = e.target.value
+    })
+  })
+
+
+
 if (fbMenu) {
     // const boxMenu = document.querySelector('.menu__box');
     fbMenu.addEventListener('click', activeBurger);
@@ -41,3 +54,4 @@ function deactiveBurger() {
     imgOp.classList.remove('_active');
     aboutOp.classList.remove('_active');
 }
+
