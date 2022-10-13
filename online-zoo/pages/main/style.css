@@ -1751,6 +1751,9 @@ h5 {
     top: 50%;
     transform: rotate(90deg) translate(0px, 50%);
   }
+  body._lock {
+    overflow: hidden;
+  }
   .menu__box {
     display: block;
     position: fixed;

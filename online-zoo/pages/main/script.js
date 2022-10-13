@@ -1,6 +1,5 @@
 let imgBlock = document.querySelectorAll('.random-img');
 
-
 let imgArray = [
 "url('../../../online-zoo/assets/images/two-toed_sloth.jpg')",
 "url('../../../online-zoo/assets/images/cheetahs.jpg')",
@@ -38,10 +37,6 @@ let userArr = [
 ]
 
 
-let items = document.querySelectorAll('.pets-collection');
-let currentItem = 0;
-let isEnabled = true;
-let pets = document.querySelectorAll('.pets_card');
 
 // POPUP
 let popupBg = document.querySelector('.popup_bg');
@@ -59,6 +54,7 @@ openPopupButtons.forEach((button) => {
         popupBg.classList.add('active');
         popup.classList.add('active');
         document.body.style.overflowY = "hidden";
+        popubBg.classList.add('.close-popup');
     })
 
 })
@@ -67,12 +63,16 @@ closePopupButton.addEventListener('click',() => {
     popupBg.classList.remove('active');
     popup.classList.remove('active');
     document.body.style.overflow = "auto";
+    popubBg.classList.remove('.close-popup');
 });
 
 
+/////////////////////////////////////////////////////////////
 
-
-
+let items = document.querySelectorAll('.pets-collection');
+let currentItem = 0;
+let isEnabled = true;
+let pets = document.querySelectorAll('.pets_card');
 
 function changeCurrentItem(n) {
     currentItem = (n + items.length) % items.length;
@@ -112,7 +112,6 @@ document.querySelector('.left-btn').addEventListener('click', function() {
         previousItem(currentItem);
     }
     setTimeout(() => {random()}, 500);
-
 });
 
 
@@ -131,6 +130,7 @@ for (let i = 0; i < imgBlock.length; i++){
 }
 
 
+///////////////////////////////////////////////////////////////
 
 let range = document.querySelector('.slider');
 let block = document.querySelector('.slider-line');
@@ -146,14 +146,9 @@ range.oninput = function () {
 
 const fbMenu = document.querySelector('.fbmenu');
 const boxMenu = document.querySelector('.menu__box');
-const logo = document.querySelector('.logo');
-const main = document.querySelector('.main');
-const introOp = document.querySelector('.intro');
-const imgOp = document.querySelector('.img-puppy');
-const aboutOp = document.querySelector('.wrapper_about-1');
+const test = document.querySelector('.test');
 
 if (fbMenu) {
-    // const boxMenu = document.querySelector('.menu__box');
     fbMenu.addEventListener('click', activeBurger);
     boxMenu.addEventListener('click', deactiveBurger);
 
@@ -162,28 +157,14 @@ const about = document.getElementById('menu');
 logo.addEventListener('click', deactiveBurger);
 main.addEventListener('click', deactiveBurger);
 
-// about.addEventListener('click', function() {
-//     boxMenu.classList.remove('_active')
-// });
-
 function activeBurger() {
     document.body.classList.toggle('_lock');
     fbMenu.classList.toggle('_active');
     boxMenu.classList.toggle('_active');
-    document.body.classList.toggle('_active');
-    // logo.classList.toggle('_active');
-    introOp.classList.toggle('_active');
-    imgOp.classList.toggle('_active');
-    aboutOp.classList.toggle('_active');
 }
 
 function deactiveBurger() {
     document.body.classList.remove('_lock');
     boxMenu.classList.remove('_active');
     fbMenu.classList.remove('_active');
-    document.body.classList.remove('_active');
-    // logo.classList.remove('_active');
-    introOp.classList.remove('_active');
-    imgOp.classList.remove('_active');
-    aboutOp.classList.remove('_active');
 }
