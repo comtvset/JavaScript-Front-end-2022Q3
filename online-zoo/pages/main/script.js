@@ -187,5 +187,3 @@ function deactiveBurger() {
     imgOp.classList.remove('_active');
     aboutOp.classList.remove('_active');
 }
-
-
