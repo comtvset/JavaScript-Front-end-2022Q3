@@ -1,7 +1,5 @@
 let imgBlock = document.querySelectorAll('.random-img');
-let left = document.querySelector('.left-btn');
-let right = document.querySelector('.right-btn');
-let button = document.querySelector('.btn-possition_pets');
+
 
 let imgArray = [
 "url('../../../online-zoo/assets/images/two-toed_sloth.jpg')",
@@ -25,11 +23,59 @@ let imgArray = [
 "url('../../../online-zoo/assets/images/camel.jpg')",
 ]
 
+let userArr = [
+    'Michael John',
+    'Oskar Samborsky',
+    'Fredericka Michelin',
+    'Mila Riksha',
+    'Alex Soras',
+    'Paweł Nowak',
+    'Otto Stein',
+    'Dzmitry Yankovskiy',
+    'Miroslawa Brick',
+    'Agniezka Pawlak',
+    'William Buckley',
+]
+
 
 let items = document.querySelectorAll('.pets-collection');
 let currentItem = 0;
 let isEnabled = true;
 let pets = document.querySelectorAll('.pets_card');
+
+// POPUP
+let popupBg = document.querySelector('.popup_bg');
+let popup = document.querySelector('.popup');
+let openPopupButtons = document.querySelectorAll('.open-popup');
+let closePopupButton = document.querySelector('.close-popup');
+let user = document.querySelector('.user_name_popup');
+let avatar = document.querySelector('.avatar_popup');
+
+openPopupButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupBg.classList.add('active');
+        popup.classList.add('active');
+
+        document.body.style.overflowY = "hidden";
+
+        //  for (let i = 0; i < userArr.length; i++){
+        //     if(id = 1) {user.innerHTML = userArr[1]}
+        // }
+
+    })
+
+})
+
+closePopupButton.addEventListener('click',() => {
+    popupBg.classList.remove('active');
+    popup.classList.remove('active');
+});
+
+
+
+
+
 
 function changeCurrentItem(n) {
     currentItem = (n + items.length) % items.length;
@@ -89,21 +135,6 @@ for (let i = 0; i < imgBlock.length; i++){
 
 
 
-
-
-
-
-// let offset = 0;
-// const petsContainer = document.querySelector('.slider-line');
-
-// document.querySelector('.slider').addEventListener('click', function() {
-//     offset = offset + 298;
-//     if(offset > 2300) {
-//         offset = 0
-//     }
-//     petsContainer.style.left = -offset + 'px';
-// });
-
 let range = document.querySelector('.slider');
 let block = document.querySelector('.slider-line');
 let sliderComment = document.querySelector('.slider-comment');
@@ -159,8 +190,5 @@ function deactiveBurger() {
     imgOp.classList.remove('_active');
     aboutOp.classList.remove('_active');
 }
-
-
-// POPUP
 
 

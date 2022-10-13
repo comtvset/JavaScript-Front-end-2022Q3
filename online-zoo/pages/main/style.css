@@ -974,7 +974,7 @@ h5 {
 
 .avatar {
   position: relative;
-  z-index: 2;
+  z-index: 0;
   margin-top: -19px;
   margin-left: 17px;
 }
@@ -1330,6 +1330,74 @@ h5 {
 .menu_footer {
   margin: 26px 0px 16px 23px;
   padding-left: 0px;
+}
+
+/* ### POPUP ### */
+.popup_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+.popup {
+  top: 50%;
+  left: 50%;
+  transition: 0.5s all;
+}
+
+.open-popup {
+  cursor: pointer;
+}
+
+.popup_bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.close-popup {
+  position: absolute;
+  top: -6px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.gradient-block-test_popup {
+  position: relative;
+  width: 268px;
+  height: 391px;
+  margin: 0;
+  background: #F1F3F2;
+  border-radius: 20px;
+  margin-right: 28px;
+  top: 36vh;
+  left: 43%;
+}
+
+.user_name_popup {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333B41;
+  line-height: 120%;
+  color: #000000;
+  margin: 0;
+  margin-left: 64px;
+  padding-top: 15px;
+}
+
+.avatar_popup {
+  position: relative;
+  z-index: 0;
+  margin-top: -19px;
+  margin-left: 17px;
 }
 
 @media (max-width: 1599px) {
