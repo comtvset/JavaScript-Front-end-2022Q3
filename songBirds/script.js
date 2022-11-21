@@ -234,6 +234,4 @@ playGame.addEventListener('click', () => {
     game.classList.add('game');
 });
 
-
-
-
+alert('Привет! Прошу проверить работу в последний день Deadline. Функционал в процессе разработки')
