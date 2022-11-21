@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-  background-image: url(/assets/image/wallpaper2.jpg);
+  background-image: url(./assets/image/wallpaper2.jpg);
   background-size: cover;
 }
 

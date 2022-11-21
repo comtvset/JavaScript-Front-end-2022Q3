@@ -27,7 +27,7 @@ logoContainer.className = 'logo-container';
 const logoBird = document.createElement('img');
 logoContainer.appendChild(logoBird);
 logoBird.className = 'logo-bird';
-logoBird.setAttribute('src', '/assets/icon/logo_bird_c.png');
+logoBird.setAttribute('src', './assets/icon/logo_bird_c.png');
 logoBird.setAttribute('alt', 'logo');
 
 const headerEl = document.createElement('div');
@@ -176,7 +176,7 @@ const gitIcon = document.createElement('img');
 gitHub.appendChild(gitIcon);
 gitIcon.className = 'footer-el';
 gitIcon.classList.add('size-icon32');
-gitIcon.setAttribute('src', '/assets/icon/GitHub-Mark-32px(white).png');
+gitIcon.setAttribute('src', './assets/icon/GitHub-Mark-32px(white).png');
 gitIcon.setAttribute('alt', 'github');
 
 
@@ -186,7 +186,7 @@ school.setAttribute('href', 'https://rs.school/js');
 const schoolIcon = document.createElement('img');
 school.appendChild(schoolIcon);
 schoolIcon.className = 'footer-el';
-schoolIcon.setAttribute('src', '/assets/icon/rs_school_js.png');
+schoolIcon.setAttribute('src', './assets/icon/rs_school_js.png');
 schoolIcon.setAttribute('alt', 'rs_school');
 
 const intro = document.createElement('div');

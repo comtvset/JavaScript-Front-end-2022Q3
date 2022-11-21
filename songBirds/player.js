@@ -41,7 +41,7 @@ class Player {
     const playIMG = document.createElement('img');
     play.appendChild(playIMG);
     playIMG.className = 'play-img';
-    playIMG.setAttribute('src', '/assets/icon/play.png');
+    playIMG.setAttribute('src', './assets/icon/play.png');
     playIMG.setAttribute('alt', 'play');
 
     const questionPlayer = document.createElement('audio');
@@ -89,7 +89,7 @@ class Player {
     const replayIMG = document.createElement('img');
     replay.appendChild(replayIMG);
     replayIMG.className = 'replay-img';
-    replayIMG.setAttribute('src', '/assets/icon/replay.png');
+    replayIMG.setAttribute('src', './assets/icon/replay.png');
     replayIMG.setAttribute('alt', 'replay');
 
     const volume = document.createElement('input');
