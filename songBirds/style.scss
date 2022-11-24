@@ -435,11 +435,17 @@ input[type=range]::-webkit-slider-thumb {
 	@include mate-before();
 }
 
+.game-end {
+	pointer-events: none;
+	opacity: 0.8;
+}
+
 .finish {
 	@include mate();
 	margin-top: 20px;
 	height: 400px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -448,7 +454,6 @@ input[type=range]::-webkit-slider-thumb {
 
 	font-size: 35px;
 }
-
 
 
 //FOOTER
