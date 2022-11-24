@@ -267,6 +267,7 @@ playGame.addEventListener('click', () => {
   greetings.classList.add('no-greetings');
   game.classList.add('game');
   document.querySelector('.finish').style.display = 'none';
+  AgainGame
 });
 
 let TopPlayerAudio;
@@ -287,7 +288,8 @@ NextStep();
 
 function NextStep() {
   // Очередной шаг игры
-  document.querySelector('.question-pictures').src = './assets/icon/songBirdQuestion.png';
+  document.querySelector('.question-pictures').src =
+    './assets/icon/songBirdQuestion.png';
   document.querySelector('.lng-question-title').textContent = '*******';
   document.querySelector('.species').textContent = '';
   document.querySelector('.lng-description').textContent = '';
@@ -320,15 +322,19 @@ function NextStep() {
 
 function ChoiceDone() {
   // вызывается при выборе варианта ответа
-//   console.log(rd);
+    // console.log(rd);
   if (rd == 7) {
+    // game.classList.add('game-end');
     // console.log(rd)
     // console.log('FINISH')
     setTimeout(() => {
       game.classList.remove('game');
       document.querySelector('.finish').style.display = 'flex';
-    }, 10000);
-    finishInfo.textContent = langSelect.value == 'en' ? `Congratulations! You have completed the game! Your score ${sd}` : `Поздравляю! Вы завершили игру! Ваш счет ${sd}`;
+    }, 8000);
+    finishInfo.textContent =
+      langSelect.value == 'en'
+        ? `Congratulations! You have completed the game! Your score ${sd}`
+        : `Поздравляю! Вы завершили игру! Ваш счет ${sd}`;
   }
 
   document.querySelector('.lng-listen-text').style.display = 'none';
@@ -356,6 +362,11 @@ function ChoiceDone() {
   let choiceps = this.dataset['ps'] - 1;
   if (choiceps != ps) {
     // выбран неправильный ответ
+
+    // data[step][choiceps].name = document.querySelector(
+    //     `#choice${choiceps + 1}`
+    // ).style.color = 'white';
+
     // отображаем правый плеер
     document.querySelector('.answer-container').style.display = 'block';
     // подставляем правому плееру голос выбранной пользователем птицы
@@ -363,14 +374,21 @@ function ChoiceDone() {
     RightPlayerImage.src = data[step][choiceps].image;
     RightPlayerTitle.textContent = data[step][choiceps].name;
     RightPlayerDiscription.textContent = data[step][choiceps].description;
-    data[step][choiceps].name = document.querySelector(
-      `#choice${choiceps + 1}`
-    ).style.color = 'red';
 
-    let audio = new Audio();
-    audio.preload = 'auto';
-    audio.src = './assets/media/error.mp3';
-    audio.play();
+    if (next.classList.contains('btn-flip-disable')) {
+      data[step][choiceps].name = document.querySelector(
+        `#choice${choiceps + 1}`
+      ).style.color = 'red';
+      let audio = new Audio();
+      audio.preload = 'auto';
+      audio.src = './assets/media/error.mp3';
+      audio.play();
+    } else {
+      data[step][choiceps].name = document.querySelector(
+        `#choice${choiceps + 1}`
+      ).style.color = 'white';
+    }
+
     count--;
   } else if (choiceps == ps) {
     // выбран правильный ответ
@@ -387,7 +405,9 @@ function ChoiceDone() {
     TopPlayerImage.src = data[step][choiceps].image;
     TopPlayerTitle.textContent = data[step][choiceps].name;
     TopPlayerDiscription.textContent = data[step][choiceps].description;
-    next.classList.remove('btn-flip-disable');
+
+
+    if (next.classList.contains('btn-flip-disable')) {
     data[step][choiceps].name = document.querySelector(
       `#choice${choiceps + 1}`
     ).style.color = 'green';
@@ -396,9 +416,10 @@ function ChoiceDone() {
     audio.preload = 'auto';
     audio.src = './assets/media/win.mp3';
     audio.play();
+    }
 
     sd = count + sd;
-
+    next.classList.remove('btn-flip-disable');
     next.addEventListener('click', () => {
       if (!next.classList.contains('btn-flip-disable')) {
         step++;
@@ -407,3 +428,13 @@ function ChoiceDone() {
     });
   }
 }
+
+const AgainGame = document.createElement('a');
+finish.appendChild(AgainGame);
+AgainGame.className = 'btn-flip';
+AgainGame.setAttribute('data-play', 'Play Again?');
+AgainGame.setAttribute('data-go', "Let's go");
+
+AgainGame.addEventListener('click', () => {
+    location.reload()
+});
