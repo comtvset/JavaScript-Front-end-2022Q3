@@ -19,13 +19,17 @@ const translate = {
       'en': 'language',
       'ru': 'язык'
     },
-    'question-title': {
-      'en': 'crow',
-      'ru': 'ворон'
+    'listen-text': {
+      'en': 'Listen to the player. Select a bird from the list',
+      'ru': 'Послушайте плеер. Выберите птицу из списка'
     },
-    'description': {
-      'en': 'Raven is a large bird. The body length reaches 70 centimeters, the wingspan is up to one and a half meters. Ravens inhabit the vicinity of the Tower. There is a belief in England that the day the black crows fly away from the Tower, the monarchy will collapse.',
-      'ru': 'Ворон – крупная птица. Длина тела достигает 70 сантиметров, размах крыльев – до полутора метров. Вороны населяют окрестности Тауэра. В Англии бытует поверье, что в день, когда черные вороны улетят от Тауэра, монархия рухнет.'
-    },
+    // 'question-title': {
+    //   'en': 'crow',
+    //   'ru': 'ворон'
+    // },
+    // 'description': {
+    //   'en': 'Raven is a large bird. The body length reaches 70 centimeters, the wingspan is up to one and a half meters. Ravens inhabit the vicinity of the Tower. There is a belief in England that the day the black crows fly away from the Tower, the monarchy will collapse.',
+    //   'ru': 'Ворон – крупная птица. Длина тела достигает 70 сантиметров, размах крыльев – до полутора метров. Вороны населяют окрестности Тауэра. В Англии бытует поверье, что в день, когда черные вороны улетят от Тауэра, монархия рухнет.'
+    // },
   }
-  // export default translate;
+  export default translate;
