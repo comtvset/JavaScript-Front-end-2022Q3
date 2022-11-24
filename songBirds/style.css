@@ -96,6 +96,10 @@ option {
   background: inherit;
 }
 
+.btn-flip-disable {
+  cursor: not-allowed;
+}
+
 .btn-flip {
   margin: 2em auto;
   opacity: 1;
@@ -109,7 +113,6 @@ option {
   text-decoration: none;
   text-transform: uppercase;
   width: 200px;
-  cursor: pointer;
 }
 .btn-flip:hover:after {
   opacity: 1;
@@ -338,6 +341,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 17px;
   margin-top: 20px;
   margin-right: 10px;
+  height: 358px;
 }
 
 .choice-container::before {
@@ -375,6 +379,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 17px;
   margin-top: 20px;
   margin-left: 10px;
+  height: 358px;
 }
 
 .answer-container::before {
@@ -391,6 +396,61 @@ input[type=range]::-webkit-slider-thumb {
   margin: -20px;
 }
 
+.lng-listen-text {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1rem 0 rgba(72, 72, 72, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 358px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lng-listen-text::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgb(20, 20, 20);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+.finish {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1rem 0 rgba(72, 72, 72, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 17px;
+  margin-top: 20px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finish-info {
+  font-size: 35px;
+}
+
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -404,4 +464,20 @@ input[type=range]::-webkit-slider-thumb {
 .size-icon32 {
   height: 32px;
   width: 32px;
+}
+
+@media (max-width: 900px) {
+  .wrapper-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .answer-container {
+    margin-left: 0px;
+    height: 650px;
+  }
+  .lng-listen-text {
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
